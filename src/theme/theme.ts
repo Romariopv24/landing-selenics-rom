@@ -2,6 +2,13 @@
 'use client';
 
 import { createTheme, responsiveFontSizes } from "@mui/material";
+import { Raleway } from "next/font/google";
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  style: ['normal'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
 
 export const theme = createTheme({
   palette: {
@@ -30,12 +37,18 @@ export const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'inherit',
+    fontFamily: raleway.style.fontFamily, // Usa la fuente Raleway
     fontSize: 16,
   },
   components: {
     MuiCssBaseline: {
       styleOverrides: `
+        @font-face {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 400;
+          src: url(${raleway.style.fontFamily}) format('woff2');
+        }
       `,
     },
     MuiButton: {
