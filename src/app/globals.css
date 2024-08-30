@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  
+  --font-raleway: 'Raleway', sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +28,14 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.text1 {
+  font-family: var(--font-raleway);
+}
+
+.text2 {
+  font-family: var(--font-dm-sans);
 }
 
 @layer utilities {

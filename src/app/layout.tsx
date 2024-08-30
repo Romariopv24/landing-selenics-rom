@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans, Raleway } from "next/font/google";
 import "./globals.css";
+import { responsiveTheme } from "@/theme/theme";
+import { ThemeProvider } from "@mui/material";
+import { Navigation } from "./components/navigation/page";
 
-const inter = Inter({ subsets: ["latin"] });
+const raleway = Raleway({
+  subsets: ['latin'],
+  style: ['normal'],
+  weight:["100",'200','300', '400', '500', '600', "700", "800","900"]
+})
+
+const dmSans = DM_Sans({
+    subsets: [ "latin"],
+    style: ["normal"],
+    weight:["100","1000","200","300","400","500","600","700","800","900"]
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${raleway.className} ${dmSans.className}`}>
+         <ThemeProvider theme={responsiveTheme} >
+              {children}
+          </ThemeProvider>
+      </body>
     </html>
   );
 }
