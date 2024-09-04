@@ -69,7 +69,7 @@ export const Navbar = () => {
 
 const MainContainer = styled(Stack)<{ scrolled: boolean }>(({ scrolled }) => ({
   flexDirection: 'row',
-  height: '7rem',
+  height: '5rem',
   backgroundColor: scrolled ? 'rgba(55, 23, 126, 0.8)' : 'transparent',
   alignItems: 'center',
   position: 'fixed',

@@ -1,5 +1,5 @@
 import { rootImages } from '@/app/core/rootImages'
-import { Box } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import React, { useRef } from 'react'
 
 export const VideoBanner = () => {
@@ -22,37 +22,42 @@ export const VideoBanner = () => {
         justifyContent: 'center',
         alignItems: 'center',
         width: '80%',
-        position: 'relative',
       }}
     >
-      <video
-        ref={videoRef}
-        style={{
-          display: 'block',
-          width: '100%', // Ajusta el ancho al 100% del contenedor
-          height: 'auto', // Mantiene la proporción del video
-          maxWidth: '60%', // Asegura que el video no exceda el ancho del contenedor
-        }}
+      <Box
+        display="flex"
+        justifyContent={'center'}
+        height={{ xs: '18rem', lg: '20rem', xl: '30rem' }}
+        mt={{ lg: '3rem' }}
+        position={'relative'}
       >
-        <source src={rootImages.video.bannerVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <button
-        onClick={handlePlayPause}
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '200px',
-          height: '200px',
-          background: 'transparent',
-          border: 'none',
-          color: 'transparent',
-          cursor: 'pointer',
-        }}
-      >
-        Play/Pause
-      </button>
+        <video
+          ref={videoRef}
+          style={{
+            display: 'block',
+            width: '100%', // Ajusta el ancho al 100% del contenedor
+            height: 'auto', // Mantiene la proporción del video
+          }}
+        >
+          <source src={rootImages.video.bannerVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <Button
+          onClick={handlePlayPause}
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            background: 'transparent',
+            transform: 'translate(-50%, -50%)', // Centra el botón
+            border: 'none',
+            color: 'transparent',
+            cursor: 'pointer',
+          }}
+        >
+          Play/Pause
+        </Button>
+      </Box>
     </div>
   )
 }
