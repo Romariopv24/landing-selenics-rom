@@ -11,7 +11,7 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
         alignItems: 'center',
         flexDirection: 'column',
         justifyContent: 'center',
-        minHeight: { xs: '90vh', lg: '170vh', xl: '125vh' },
+        minHeight: { xs: '90vh', lg: '110vh', xl: '100%' },
         position: 'relative',
         overflow: 'hidden',
         zIndex: 1,
@@ -31,10 +31,10 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
             zIndex: -1,
             width: {
               xs: '430vw',
-              sm: '350vw',
-              md: '250vw',
+              sm: '230vw',
+              md: '200vw',
               lg: '150vw',
-              xl: '100vw',
+              xl: '103vw',
             },
           }}
         >
@@ -53,25 +53,7 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
           </video>
         </Stack>
       </Box>
-      {/* <Box display={{ xs: 'none', lg: 'flex', width: '1200vw' }}>
-        <video
-          width="100%"
-          height="100%"
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            zIndex: -1,
-            objectFit: 'cover',
-            pointerEvents: 'none',
-          }}
-          loop
-          autoPlay
-          muted
-        >
-          <source src={rootImages.video.starsBg} type="video/mp4" />
-        </video>
-      </Box> */}
+
       {children}
     </Stack>
   )

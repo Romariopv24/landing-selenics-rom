@@ -33,7 +33,7 @@ const dmSans = DM_Sans({
 export const Banner = () => {
   return (
     <BoxBanner>
-      <Box sx={{ width: { xs: '90%', lg: '40%', xl: '55%' } }}>
+      <Box sx={{ width: { xs: '90%', lg: '40%', xl: '45%' } }}>
         <Typography
           variant="h1"
           gutterBottom
@@ -46,7 +46,7 @@ export const Banner = () => {
               sm: '4rem',
               md: '5rem',
               lg: '3rem',
-              xl: '5rem',
+              xl: '4rem',
             },
             textTransform: 'uppercase',
           }}
@@ -54,7 +54,7 @@ export const Banner = () => {
           Struggling to Sell Your Workshop?
         </Typography>
       </Box>
-      <Box sx={{ width: { xs: '80%', lg: '37%', xl: '35%' }, mt: '1.5rem' }}>
+      <Box sx={{ width: { xs: '80%', lg: '37%', xl: '40%' }, mt: '1.2rem' }}>
         <Typography
           variant="h4"
           gutterBottom
@@ -68,7 +68,7 @@ export const Banner = () => {
               sm: '1.5rem',
               md: '2rem',
               lg: '1rem',
-              xl: '1.5rem',
+              xl: '1.2rem',
             },
           }}
         >
@@ -87,7 +87,7 @@ export const Banner = () => {
 
       <VideoBanner />
 
-      <Stack flexDirection={'row'} gap={2} mb={4}>
+      <Stack flexDirection={'row'} gap={2} mt={{ xs: 0, lg: 4 }} mb={2}>
         <South />
         <Typography>Scroll for more</Typography>
         <South />
@@ -104,17 +104,11 @@ const BoxBanner = styled(Box)(({ theme }) => ({
   justifyContent: 'center',
   width: '100%',
   margin: 'auto',
-  marginTop: '10rem',
-  [theme.breakpoints.between('lg', 'xl')]: {
-    // padding: '200px 200px ',
-  },
+  marginTop: '6rem',
+  [theme.breakpoints.between('lg', 'xl')]: {},
   [theme.breakpoints.between('xs', 'sm')]: {
-    //   padding: '150px 10px ',
+    marginTop: '8rem',
   },
-  [theme.breakpoints.between('sm', 'md')]: {
-    //   padding: '170px 50px',
-  },
-  [theme.breakpoints.between('md', 'lg')]: {
-    //   padding: '170px 50px',
-  },
+  [theme.breakpoints.between('sm', 'md')]: {},
+  [theme.breakpoints.between('md', 'lg')]: {},
 }))

@@ -27,8 +27,8 @@ export const VideoBanner = () => {
       <Box
         display="flex"
         justifyContent={'center'}
-        height={{ xs: '18rem', lg: '20rem', xl: '30rem' }}
-        mt={{ lg: '3rem' }}
+        height={{ xs: '18rem', lg: '20rem', xl: '25rem' }}
+        mt={{ sm: '2rem', lg: '3rem' }}
         position={'relative'}
       >
         <video
