@@ -10,7 +10,7 @@ const raleway = Raleway({
 
 export const ContentResults = () => {
   return (
-    <Stack mt={{ xl: 20 }} alignContent={'center'}>
+    <Stack mt={{ xl: 5 }} alignContent={'center'}>
       <Typography
         className={raleway.className}
         sx={{
@@ -24,11 +24,11 @@ export const ContentResults = () => {
       </Typography>
 
       <Stack
-        mt={{ xs: 5 }}
+        mt={{ xs: 5, xl: 20 }}
         flexDirection={{ xs: 'column', md: 'row' }}
         gap={{ xs: 6, lg: 10 }}
       >
-        <Box width={{ xs: '100%', lg: '30rem' }}>
+        <Box width={{ xs: '100%', lg: '35rem' }}>
           <Box
             sx={{
               boxShadow: '10px 10px 2px #8250ed',
@@ -50,7 +50,7 @@ export const ContentResults = () => {
             className={raleway.className}
             sx={{
               fontWeight: 700,
-              fontSize: '16px',
+              fontSize: {xs:'16px', lg:'25px'},
             }}
             mt={3}
           >
@@ -60,14 +60,14 @@ export const ContentResults = () => {
             className={raleway.className}
             mt={2}
             textAlign={'left'}
-            fontSize={'14px'}
+            fontSize={{xs:'14px', lg:'20px'}}
           >
             We don’t just drive traffic; we convert it into tangible results.
             This is how our expertly crafted landing pages + sales funnels have
             transformed leads into revenue, boosting your bottom line.
           </Typography>
         </Box>
-        <Box width={{ xs: '100%', lg: '30rem' }}>
+        <Box width={{ xs: '100%', lg: '35rem' }}>
           <Box
             sx={{
               boxShadow: '10px 10px 2px #8250ed',
@@ -75,21 +75,17 @@ export const ContentResults = () => {
             }}
           >
             <img
-              src={rootImages.excelOne}
-              alt="excelone"
+              src={rootImages.discord}
+              alt="discord"
               style={{ width: '100%', height: '100%' }}
             />
-            <img
-              src={rootImages.excelTwo}
-              alt="exceltwo"
-              style={{ width: '100%', height: '100%' }}
-            />
+          
           </Box>
           <Typography
             className={raleway.className}
             sx={{
               fontWeight: 700,
-              fontSize: '16px',
+              fontSize: {xs:'16px', lg:'25px'},
             }}
             mt={3}
           >
@@ -99,7 +95,7 @@ export const ContentResults = () => {
             className={raleway.className}
             mt={2}
             textAlign={'left'}
-            fontSize={'14px'}
+            fontSize={{xs:'14px', lg:'20px'}}
           >
             We provide detailed insights into your campaign’s performance, from
             lead generation to budget allocation, ensuring every dollar works

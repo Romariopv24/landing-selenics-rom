@@ -9,4 +9,5 @@ export const rootImages = {
   },
   excelOne: `${dir}excelOne.png`,
   excelTwo: `${dir}excelTwo.png`,
+  discord:`${dir}discord.png`,
 }
