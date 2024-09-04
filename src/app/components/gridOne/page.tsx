@@ -1,9 +1,11 @@
 import { Stack } from '@mui/material'
 import React from 'react'
+import { ContentGrid } from './ContentGrid'
 
 export const FitComponent = () => {
     return (
         <Stack sx={mainContainer}>
+            <ContentGrid />
         </Stack>
       )
     }
@@ -31,8 +33,5 @@ export const FitComponent = () => {
         `,
         },
       padding: '2rem',
-    }
+ }
     
-
-  
-    // 34266e
