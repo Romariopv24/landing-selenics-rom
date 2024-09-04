@@ -24,7 +24,7 @@ export const ContentResults = () => {
       </Typography>
 
       <Stack
-        mt={{ xs: 5, xl: 20 }}
+        mt={{ xs: 5, lg: 8, xl:10}}
         flexDirection={{ xs: 'column', md: 'row' }}
         gap={{ xs: 6, lg: 10 }}
       >

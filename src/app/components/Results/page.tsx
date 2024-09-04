@@ -20,5 +20,4 @@ const mainContainer = {
         radial-gradient(circle at 95% 120%, #11649b, transparent 50%)
              `,
   padding: '2rem',
-  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
 }
