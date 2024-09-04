@@ -22,12 +22,17 @@ export const VideoBanner = () => {
         justifyContent: 'center',
         alignItems: 'center',
         width: '80%',
-        position: 'relative', // Asegura que el botón se posicione relativo al contenedor
+        position: 'relative',
       }}
     >
       <video
         ref={videoRef}
-        style={{ display: 'block', width: '300px', height: '300px' }}
+        style={{
+          display: 'block',
+          width: '100%', // Ajusta el ancho al 100% del contenedor
+          height: 'auto', // Mantiene la proporción del video
+          maxWidth: '60%', // Asegura que el video no exceda el ancho del contenedor
+        }}
       >
         <source src={rootImages.video.bannerVideo} type="video/mp4" />
         Your browser does not support the video tag.
@@ -38,8 +43,8 @@ export const VideoBanner = () => {
           position: 'absolute',
           top: 0,
           left: 0,
-          width: '300px',
-          height: '300px',
+          width: '200px',
+          height: '200px',
           background: 'transparent',
           border: 'none',
           color: 'transparent',
@@ -51,18 +56,3 @@ export const VideoBanner = () => {
     </div>
   )
 }
-
-// ;<div
-//   style={{
-//     display: 'flex',
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     width: '60%',
-//     marginTop: '3rem',
-//   }}
-// >
-//   <video>
-//     <source src={rootImages.video.bannerVideo} type="video/mp4" />
-//     Your browser does not support the video tag.
-//   </video>
-// </div>

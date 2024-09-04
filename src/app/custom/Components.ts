@@ -1,11 +1,17 @@
-import { Button, ButtonProps, styled } from "@mui/material";
+import { Button, ButtonProps, styled } from '@mui/material'
 
-export const BtnPrimary = styled(Button)<ButtonProps>(({ theme }) => ({
+interface BtnPrimaryProps extends ButtonProps {
+  width?: string
+  height?: string
+}
+
+export const BtnPrimary = styled(Button)<BtnPrimaryProps>(
+  ({ theme, width, height }) => ({
     background: theme.palette.custom.white,
-    color:theme.palette.dark.main,
+    color: theme.palette.dark.main,
     borderRadius: '25px',
-    width: '150px',
-    height:'60px',
+    width: width,
+    height: height,
     // '&:hover': {
     //   backgroundColor: theme.palette.custom.white,
     // },
@@ -13,4 +19,5 @@ export const BtnPrimary = styled(Button)<ButtonProps>(({ theme }) => ({
       backgroundColor: '#c2c2c2',
       color: '#000',
     },
-  }))
+  })
+)

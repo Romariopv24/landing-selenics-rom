@@ -11,7 +11,7 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
         alignItems: 'center',
         flexDirection: 'column',
         justifyContent: 'center',
-        minHeight: { lg: '100vh', xs: '90vh' },
+        minHeight: { xs: '90vh', lg: '170vh', xl: '125vh' },
         position: 'relative',
         overflow: 'hidden',
         zIndex: 1,
@@ -21,7 +21,6 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
         sx={{
           width: '100%',
           padding: '0 20px',
-          display: { lg: 'none' },
         }}
       >
         <Stack
@@ -30,7 +29,13 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
             top: 0,
             left: 0,
             zIndex: -1,
-            width: { xs: '310vw', sm: '210vw', md: '110vw' },
+            width: {
+              xs: '430vw',
+              sm: '350vw',
+              md: '250vw',
+              lg: '150vw',
+              xl: '100vw',
+            },
           }}
         >
           <video
@@ -48,7 +53,7 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
           </video>
         </Stack>
       </Box>
-      <Box display={{ xs: 'none', lg: 'flex' }}>
+      {/* <Box display={{ xs: 'none', lg: 'flex', width: '1200vw' }}>
         <video
           width="100%"
           height="100%"
@@ -66,7 +71,7 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
         >
           <source src={rootImages.video.starsBg} type="video/mp4" />
         </video>
-      </Box>
+      </Box> */}
       {children}
     </Stack>
   )
