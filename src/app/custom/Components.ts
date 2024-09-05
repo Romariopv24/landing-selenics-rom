@@ -15,7 +15,7 @@ export const BtnPrimary = styled(Button)<BtnPrimaryProps>(
     border: transparent === true ? `1px solid ${theme.palette.custom.white}` : 'none',
     width: width,
     height: height,
-    boxShadow: boxShadow === true ? `0 6px 8px ${theme.palette.dark.main}` : '0px',
+    boxShadow: boxShadow === true ? `0 6px 8px ${theme.palette.dark.main}` : 'none',
     // '&:hover': {
     //   backgroundColor: theme.palette.custom.white,
     // },

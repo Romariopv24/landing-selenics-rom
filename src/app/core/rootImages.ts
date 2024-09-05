@@ -1,5 +1,6 @@
 const dir = '/images/'
 const dirIcons = '/images/icons/'
+const dirIconsCont = '/images/icons-content/'
 const dirVideo = '/videos/'
 
 export const rootImages = {
@@ -18,5 +19,11 @@ export const rootImages = {
     sad: `${dirIcons}sad.svg`,
     stars: `${dirIcons}stars.svg`,
     xIcon: `${dirIcons}x-icon.svg`,
+  },
+  iconsContent: {
+    pen: `${dirIconsCont}pen.svg`,
+    glass: `${dirIconsCont}glass.svg`,
+    cash: `${dirIconsCont}cash.svg`,
+    calendar: `${dirIconsCont}calendar.svg`,
   }
 }

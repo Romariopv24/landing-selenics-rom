@@ -34,7 +34,7 @@ export const Navbar = () => {
   }, [])
 
   return (
-    <MainContainer scrolled={scrolled}>
+    <MainContainer scrolled={scrolled ? true : undefined}>
       <MenuContainer>
         <Image
           src={rootImages.logo}
@@ -67,10 +67,10 @@ export const Navbar = () => {
   )
 }
 
-const MainContainer = styled(Stack)<{ scrolled: boolean }>(({ scrolled }) => ({
+const MainContainer = styled(Stack)<{ scrolled?: boolean }>(({ scrolled }) => ({
   flexDirection: 'row',
   height: '5rem',
-  backgroundColor: scrolled ? 'rgba(55, 23, 126, 0.8)' : 'transparent',
+  backgroundColor: scrolled === true ? 'rgba(55, 23, 126, 0.8)' : 'transparent',
   alignItems: 'center',
   position: 'fixed',
   top: 0,

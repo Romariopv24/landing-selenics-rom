@@ -81,6 +81,8 @@ export const Banner = () => {
         width={'120px'}
         height="50px"
         sx={{ mt: '1.5rem', fontSize: '12px' }}
+        boxShadow={true}
+         transparent={false}
       >
         Book a Call
       </BtnPrimary>

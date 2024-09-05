@@ -51,7 +51,7 @@ export const ContentGrid = () => {
   ]
 
   return (
-    <Stack  mt={{ xl: 5 }} alignContent={'center'} width={{lg: '70%', xl:'60%'}}>
+    <Stack  mt={{ xl: 10 }} alignContent={'center'} width={{lg: '70%', xl:'60%'}}>
         <Typography
         className={raleway.className}
         sx={{
