@@ -1,11 +1,13 @@
 import { Stack } from '@mui/material'
 import React from 'react'
 import { ContentGrid } from './ContentGrid'
+import { Convinced } from './Convinced'
 
 export const FitComponent = () => {
     return (
         <Stack sx={mainContainer}>
             <ContentGrid />
+            <Convinced />
         </Stack>
       )
     }

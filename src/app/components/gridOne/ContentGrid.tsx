@@ -1,13 +1,19 @@
 import { rootImages } from '@/app/core/rootImages'
 import { Box, Grid, Stack, Typography } from '@mui/material'
-import { Raleway } from 'next/font/google'
+import { DM_Sans, Raleway } from 'next/font/google'
 import React from 'react'
 
 const raleway = Raleway({
-    subsets: ['latin'],
-    style: ['normal'],
-    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  })
+  subsets: ['latin'],
+  style: ['normal'],
+  weight:["100",'200','300', '400', '500', '600', "700", "800","900"]
+})
+
+const dmSans = DM_Sans({
+    subsets: [ "latin"],
+    style: ["normal"],
+    weight:["100","1000","200","300","400","500","600","700","800","900"]
+})
 
 export const ContentGrid = () => {
 
@@ -45,7 +51,7 @@ export const ContentGrid = () => {
   ]
 
   return (
-    <Stack  mt={{ xl: 5 }} alignContent={'center'} width={{lg: '70%'}}>
+    <Stack  mt={{ xl: 5 }} alignContent={'center'} width={{lg: '70%', xl:'60%'}}>
         <Typography
         className={raleway.className}
         sx={{
@@ -70,14 +76,19 @@ export const ContentGrid = () => {
                 <Box  width={{xs:'20%', md:'15%'}} height={'100%'} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignContent={'center'} alignItems={'center'}>
                   <img src={item.icon} alt={item.title} style={{ width: '40px', height: '40px' }} />
                 </Box>
-                <Box width={'85%'} my={'auto'} display={'flex'} flexDirection={'column'} justifyContent={'start'} alignContent={'flex-start'}>
+                <Box width={'80%'} my={'auto'} display={'flex'} flexDirection={'column'} justifyContent={'start'} alignContent={'flex-start'}>
                   <Typography 
-                    fontSize={'18px'}
+                    className={raleway.className}
+                    fontWeight={'700'}
+                    fontSize={{xs:'18px', lg:'20px'}}
                   gutterBottom>
                     {item.title}
                   </Typography>
                   <Typography
-                    fontSize={'15px'}
+                  width={'90%'}
+                    className={dmSans.className}
+                    fontSize={{xs:'14px', lg:'17px'}}
+                    textAlign={'left'}
                   >
                     {item.text}
                   </Typography>

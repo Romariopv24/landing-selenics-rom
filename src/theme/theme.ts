@@ -30,7 +30,7 @@ export const theme = createTheme({
     custom: {
       main: 'rgb(49, 51, 56)',
       sec: 'rgb(181, 186, 193)',
-      white: 'rgb(242, 243, 245)',
+      white: '#edf0ff',
       green: 'rgb(35, 165, 89)',
       line: 'rgb(49, 51, 56)',
       grey: 'rgb(219, 222, 225)',
