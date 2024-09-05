@@ -45,7 +45,7 @@ export const ContentGrid = () => {
   ]
 
   return (
-    <Stack  mt={{ xl: 5 }} alignContent={'center'}>
+    <Stack  mt={{ xl: 5 }} alignContent={'center'} width={{lg: '70%'}}>
         <Typography
         className={raleway.className}
         sx={{
@@ -65,16 +65,20 @@ export const ContentGrid = () => {
       >
           <Grid container spacing={4}>
           {gridData.map((item, index) => (
-            <Grid item xs={12} sm={6} md={6} key={index}>
-              <Box display="flex" alignItems="flex-start">
-                <Box mr={2}>
+            <Grid item xs={12} sm={12} md={6} key={index}>
+              <Box sx={mainBoxGrid}>
+                <Box  width={{xs:'20%', md:'15%'}} height={'100%'} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignContent={'center'} alignItems={'center'}>
                   <img src={item.icon} alt={item.title} style={{ width: '40px', height: '40px' }} />
                 </Box>
-                <Box>
-                  <Typography variant="h6" gutterBottom>
+                <Box width={'85%'} my={'auto'} display={'flex'} flexDirection={'column'} justifyContent={'start'} alignContent={'flex-start'}>
+                  <Typography 
+                    fontSize={'18px'}
+                  gutterBottom>
                     {item.title}
                   </Typography>
-                  <Typography variant="body1">
+                  <Typography
+                    fontSize={'15px'}
+                  >
                     {item.text}
                   </Typography>
                 </Box>
@@ -88,3 +92,11 @@ export const ContentGrid = () => {
 }
 
 
+const mainBoxGrid = {
+  display: 'flex',
+  alignItems: 'flex-start',
+  backgroundColor:'#1f1d2b',
+  borderRadius:'20px',
+  height: '10rem',
+  boxShadow: '5px 5px 2px #8250ed',
+}
