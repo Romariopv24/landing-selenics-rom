@@ -23,7 +23,7 @@ export const CardThree = () => {
 sx={{
     background: `
       radial-gradient(circle at 10% 10%, #2a2936, transparent 50%),
-      radial-gradient(circle at 90% 90%, #2c3e53, transparent 50%)
+      radial-gradient(circle at 90% 90%, #4d3253, transparent 80%)
     `,
     border: '5px solid white',
     borderRadius: '20px',

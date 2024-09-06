@@ -5,6 +5,7 @@ import { MakeItHappenContainer } from './components/makeitHappen/page'
 import { Navbar } from './components/navigation/navbar/page'
 import { PricingComponent } from './components/pricing/page'
 import { ResultsComponent } from './components/Results/page'
+import { TeamComponent } from './components/team/page'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <FitComponent />
       <MakeItHappenContainer />
       <PricingComponent />
+      <TeamComponent />
     </>
   )
 }

@@ -85,7 +85,7 @@ export const CardTwo = () => {
       position: 'relative',
       background: `
         radial-gradient(circle at 10% 10%, #2a2936, transparent 50%),
-        radial-gradient(circle at 90% 90%, #384167, transparent 50%)
+        radial-gradient(circle at 90% 90%, #384167, transparent 80%)
       `,
       overflow: 'hidden',
       width: { md: '17rem', lg: '21rem' }, // Ajusta el ancho en lg

@@ -12,12 +12,6 @@ const raleway = Raleway({
     weight:["100",'200','300', '400', '500', '600', "700", "800","900"]
   })
   
-  const dmSans = DM_Sans({
-      subsets: [ "latin"],
-      style: ["normal"],
-      weight:["100","1000","200","300","400","500","600","700","800","900"]
-  })
-
 export const PricingContent = () => {
 
    
@@ -41,7 +35,7 @@ export const PricingContent = () => {
         gap={{ xs: 6, lg: 10 }}
       >
         <Cards />
-        <Box mt={{ md: -6, lg: -7.5 }}>
+        <Box mt={{ md: -6, lg: -6.5 }}>
         <CardTwo />
         </Box>
         <CardThree />

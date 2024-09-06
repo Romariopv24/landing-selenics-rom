@@ -1,6 +1,5 @@
 'use client'
-import { BtnPrimary } from '@/app/custom/Components'
-import { Box, Stack, Typography } from '@mui/material'
+import { Avatar, Box, Stack, Typography } from '@mui/material'
 import { DM_Sans, Raleway } from 'next/font/google'
 import React from 'react'
 
@@ -16,9 +15,27 @@ const raleway = Raleway({
       weight:["100","1000","200","300","400","500","600","700","800","900"]
   })
 
-export const Cards = () => {
+  interface TeamCardProps {
+    background: string
+    image: string
+    name: string
+    profesion: string
+    textone: string
+    texttwo: string
+    textthree: string
+  }
+  
+export const TeamCard : React.FC<TeamCardProps> = ({
+    background,
+    image,
+    name,
+    profesion,
+    textone,
+    texttwo,
+    textthree,
+  }) => {
   return (
-    <Box display="flex" flexDirection="column" height={{xs:'30rem', lg:'36rem', xl:'36rem'}} width={{lg:'20rem'}
+    <Box display="flex" flexDirection="column"  width={{lg:'20rem'}
 }
     sx={{
         background: `
@@ -29,20 +46,29 @@ export const Cards = () => {
         borderRadius: '20px',
       }}
     >
-        <Stack mt={4} alignItems="center">
+ <Stack my={4} alignItems="center" >
+      
+      <Avatar
+        alt="Remy Sharp"
+        src="/static/images/avatar/1.jpg"
+        sx={{ width: 100, height: 100 }}
+/>
+
+
         <Typography
             fontWeight={'900'}
             className={raleway.className}
             fontSize={{xs:'30px', lg:'40px'}}
         >
-            Essential 
+            {name}
         </Typography>
         <Typography 
            fontWeight={'900'}
            className={dmSans.className}
-           fontSize={{xs:'40px', lg:'50px'}}
+           textAlign={'center'}
+           fontSize={{xs:'30px', lg:'50px'}}
         >
-            $1,300
+            {profesion}
         </Typography>
         <Box display={'flex'} flexDirection={'column'}  width={'83%'} gap={{xs:2, lg:1}} mt={2}>
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
@@ -51,7 +77,7 @@ export const Cards = () => {
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >
-            Custom Landing Page: Tailored design.
+            {textone}
         </Typography>
         </Stack>
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
@@ -60,7 +86,7 @@ export const Cards = () => {
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >
-            CRM Integration: Manage customers.
+           {texttwo}
         </Typography>
         </Stack>
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
@@ -69,44 +95,12 @@ export const Cards = () => {
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >
-            Email Marketing Setup: Launch campaigns.
+          {textthree}
         </Typography>
         </Stack>
-        <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
-        <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/>
-        <Typography 
-        className={dmSans.className}
-        fontSize={{xs:'12px', lg:'15px'}}
-        >
-            24/5 Support & Slack Channel: Stay connected.
-        </Typography>
-        </Stack>
-        <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
-        <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/>
-        <Typography
-        className={dmSans.className}
-        fontSize={{xs:'12px', lg:'15px'}}
-        >
-         2 Revisions: Perfect your paged.
-        </Typography>
-        </Stack>
+       
         </Box>
-        </Stack>
-        <Stack mt={{xs:8, md: 2,  lg:1, xl: 3}} justifyContent={'center'}  alignItems="center">       
-             <BtnPrimary width={'7rem'} height={'40px'} boxShadow={true} transparent={false} >
-             <Typography 
-                className={dmSans.className}
-                fontSize={{xs:'14px', lg:'14px'}}
-                >
-                     I Want It!
-               </Typography>
-            </BtnPrimary>
         </Stack>
     </Box>
   )
 }
-
-// 2a2936
-// 2c3e53
-
-
