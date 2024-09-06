@@ -1,7 +1,9 @@
-import { Stack, Typography } from '@mui/material'
+import { Box, Stack, Typography } from '@mui/material'
 import { DM_Sans, Raleway } from 'next/font/google'
 import React from 'react'
 import { Cards } from './Cards'
+import { CardTwo } from './CardTwo'
+import { CardThree } from './CardThree'
 
 
 const raleway = Raleway({
@@ -34,11 +36,15 @@ export const PricingContent = () => {
            Pricing 
       </Typography>
       <Stack
-        mt={{ xs: 5, lg: 8, xl:10}}
+        mt={{ xs: 5, md: 15 ,lg: 15, xl:15}}
         flexDirection={{ xs: 'column', md: 'row' }}
         gap={{ xs: 6, lg: 10 }}
       >
         <Cards />
+        <Box mt={{ md: -8, lg: -7.5 }}>
+        <CardTwo />
+        </Box>
+        <CardThree />
       </Stack>
     </Stack>
   )

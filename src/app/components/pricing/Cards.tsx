@@ -91,7 +91,7 @@ export const Cards = () => {
         </Stack>
         </Box>
         </Stack>
-        <Stack mt={{xs:8, lg:5}} justifyContent={'center'}  alignItems="center">       
+        <Stack mt={{xs:8, lg:5, xl: 3}} justifyContent={'center'}  alignItems="center">       
              <BtnPrimary width={'7rem'} height={'40px'} boxShadow={true} transparent={false} >
              <Typography 
                 className={dmSans.className}
@@ -107,3 +107,5 @@ export const Cards = () => {
 
 // 2a2936
 // 2c3e53
+
+

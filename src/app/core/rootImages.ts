@@ -25,5 +25,6 @@ export const rootImages = {
     glass: `${dirIconsCont}glass.svg`,
     cash: `${dirIconsCont}cash.svg`,
     calendar: `${dirIconsCont}calendar.svg`,
-  }
+  }, 
+  info: `${dir}info.svg`,
 }
