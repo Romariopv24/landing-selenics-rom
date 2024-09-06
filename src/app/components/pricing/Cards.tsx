@@ -18,7 +18,8 @@ const raleway = Raleway({
 
 export const Cards = () => {
   return (
-    <Box display="flex" flexDirection="column" height={{xs:'30rem', lg:'33rem'}} width={{lg:'20rem'}}
+    <Box display="flex" flexDirection="column" height={{xs:'30rem', lg:'36rem', xl:'36rem'}} width={{lg:'20rem'}
+}
     sx={{
         background: `
           radial-gradient(circle at 10% 10%, #2a2936, transparent 50%),
@@ -91,7 +92,7 @@ export const Cards = () => {
         </Stack>
         </Box>
         </Stack>
-        <Stack mt={{xs:8, lg:5, xl: 3}} justifyContent={'center'}  alignItems="center">       
+        <Stack mt={{xs:8, md: 2,  lg:1, xl: 3}} justifyContent={'center'}  alignItems="center">       
              <BtnPrimary width={'7rem'} height={'40px'} boxShadow={true} transparent={false} >
              <Typography 
                 className={dmSans.className}

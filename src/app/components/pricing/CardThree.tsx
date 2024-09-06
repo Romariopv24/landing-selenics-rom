@@ -19,7 +19,7 @@ const raleway = Raleway({
 
 export const CardThree = () => {
   return (
-    <Box display="flex" flexDirection="column" height={{xs:'30rem', lg:'33rem'}} width={{lg:'20rem'}}
+    <Box display="flex" flexDirection="column" height={{xs:'30rem', lg:'36rem', xl:'36rem'}}  width={{lg:'20rem'}}
 sx={{
     background: `
       radial-gradient(circle at 10% 10%, #2a2936, transparent 50%),
@@ -70,7 +70,7 @@ sx={{
    
     </Box>
     </Stack>
-    <Stack mt={{xs:20, lg:19, xl: 17}} justifyContent={'center'}  alignItems="center">       
+    <Stack mt={{xs:20, lg:18, xl: 17}} justifyContent={'center'}  alignItems="center">       
          <BtnPrimary width={'7rem'} height={'40px'} boxShadow={true} transparent={false} >
          <Typography 
             className={dmSans.className}

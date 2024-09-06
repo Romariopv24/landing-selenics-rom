@@ -41,7 +41,7 @@ export const PricingContent = () => {
         gap={{ xs: 6, lg: 10 }}
       >
         <Cards />
-        <Box mt={{ md: -8, lg: -7.5 }}>
+        <Box mt={{ md: -6, lg: -7.5 }}>
         <CardTwo />
         </Box>
         <CardThree />
