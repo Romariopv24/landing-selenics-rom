@@ -57,25 +57,47 @@ export const CardTwo = () => {
     },
   }}
 >
-  <Box
-    sx={{
-      backgroundColor: '#fff',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: 'auto',
-      padding: '10px',
-    }}
-  >
-    <Typography
-      fontWeight="900"
-      className={raleway.className}
-      fontSize={{ xs: '25px', md: '20px', lg: '23px' }} // Ajusta el tamaño de fuente en lg
-      color="#000"
+<Box
+      sx={{
+        backgroundColor: '#fff',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: 'auto',
+        padding: '10px',
+      }}
     >
-      Best VALUE
-    </Typography>
-  </Box>
+      <Box
+        component="span"
+        sx={{
+          background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          animation: 'moveGradient 10s infinite linear',
+          '@keyframes moveGradient': {
+            '0%': {
+              backgroundPosition: '0% 50%',
+            },
+            '50%': {
+              backgroundPosition: '100% 50%',
+            },
+            '100%': {
+              backgroundPosition: '0% 50%',
+            },
+          },
+          backgroundSize: '200% 200%',
+        }}
+      >
+        <Typography
+          fontWeight="900"
+          className={raleway.className}
+          mt={1}
+          fontSize={{ xs: '25px', md: '20px', lg: '23px' }} // Ajusta el tamaño de fuente en lg
+        >
+          Best VALUE
+        </Typography>
+      </Box>
+    </Box>
   <Box
     display="flex"
     flexDirection="column"
