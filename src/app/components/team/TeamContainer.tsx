@@ -8,6 +8,7 @@ import { Pagination, Autoplay  } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
+import { rootImages } from '@/app/core/rootImages'
 
 const raleway = Raleway({
     subsets: ['latin'],
@@ -19,8 +20,8 @@ export const TeamContainer = () => {
 
     const dataTeam = [
         {
-            background: '',
-            image: '',
+            background: '#2c3e53',
+            image: rootImages.team.carlos,
             name:'Da Silva',
             profesion:'Marketing & Campaign expert',
             textone: '+6 years of experience doing Sales Funnel & Meta ads.',
@@ -28,8 +29,8 @@ export const TeamContainer = () => {
             textthree: '70k+ leads secured through targeted sales funnel strategies.'
         },
         {
-            background: '',
-            image: '',
+            background: '#384167',
+            image: rootImages.team.mari,
             name:'Corvaglia',
             profesion:'Graphic Designer & Video Editor',
             textone: '+5 years of experience creating compelling digital media.',
@@ -37,8 +38,8 @@ export const TeamContainer = () => {
             textthree: '10+ industries served with crafted brand visuals, enhancing market differentiation'
         },
         {
-            background: '',
-            image: '',
+            background: '#4d3253',
+            image: rootImages.team.liz,
             name:'Fitt',
             profesion:'CX/UX Designer & Brand Strategist',
             textone: '+3 years of experience with Customer Experience Design.',
@@ -46,8 +47,8 @@ export const TeamContainer = () => {
             textthree: '22% increase in conversion rates resulting from revamped website design and UX.'
         },
         {
-            background: '',
-            image: '',
+            background: '#2c3e53',
+            image: rootImages.team.reinaldo,
             name:'Rondon',
             profesion:'Full Stack Developer',
             textone: '+4 years of experience with Administrative Area.',
@@ -56,8 +57,8 @@ export const TeamContainer = () => {
         },
 
         {
-          background: '',
-          image: '',
+          background: '#384167',
+          image: rootImages.team.valeria,
           name:'Capote',
           profesion:'Project Manager & Administrative Director',
           textone: '+6 years of experience doing Sales Funnel & Meta ads.',
@@ -65,13 +66,13 @@ export const TeamContainer = () => {
           textthree: '70k+ leads secured through targeted sales funnel strategies.'
       },
       {
-        background: '',
-        image: '',
-        name:'Capote',
-        profesion:'Project Manager & Administrative Director',
-        textone: '+6 years of experience doing Sales Funnel & Meta ads.',
-        texttwo:'$3M in advertising budgets managed with proven results.',
-        textthree: '70k+ leads secured through targeted sales funnel strategies.'
+        background: '#4d3253',
+        image: rootImages.team.reinaldo,
+        name:'Parra',
+        profesion:'Front-End Developer',
+        textone: '+3 years of experience Develop Apps.',
+        texttwo:'30% boost in customer engagement achieved through developed CX strategies.',
+        textthree: '22% increase in conversion rates resulting from revamped website design and UX.'
     },
       
     ]

@@ -2,6 +2,8 @@ const dir = '/images/'
 const dirIcons = '/images/icons/'
 const dirIconsCont = '/images/icons-content/'
 const dirVideo = '/videos/'
+const dirTeam = '/images/team/'
+
 
 export const rootImages = {
   logo: `${dir}selenics-logo-1.png`,
@@ -28,4 +30,12 @@ export const rootImages = {
   }, 
   info: `${dir}info.svg`,
   payingLine: `${dir}paying-line.svg`,
+  team: {
+    carlos:`${dirTeam}Carlos.png`,
+    liz: `${dirTeam}Liz.png`,
+    mari: `${dirTeam}Mari.png`,
+    reinaldo: `${dirTeam}Reinaldo.png`,
+    valeria: `${dirTeam}Valeria.png`,
+    romario: `${dirTeam}Reinaldo.png`,
+  }
 }

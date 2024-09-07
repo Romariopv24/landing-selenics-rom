@@ -34,12 +34,14 @@ export const TeamCard : React.FC<TeamCardProps> = ({
     texttwo,
     textthree,
   }) => {
+
+    console.log('IMG UR:', image)
   return (
     <Box display="flex" flexDirection="column"  
     sx={{
         background: `
           radial-gradient(circle at 10% 10%, #2a2936, transparent 50%),
-          radial-gradient(circle at 90% 90%, #2c3e53, transparent 80%)
+          radial-gradient(circle at 90% 90%, ${background}, transparent 80%)
         `,
         border: '5px solid white',
         borderRadius: '20px',
@@ -47,23 +49,24 @@ export const TeamCard : React.FC<TeamCardProps> = ({
         height: '92%'
       }}
     >
-  <Stack my={4} alignItems="center" >
+  <Stack my={2} alignItems="center" >
       
       <Avatar
-        alt="Remy Sharp"
-        src="/static/images/avatar/1.jpg"
-        sx={{ width: 100, height: 100 }}
+        alt='avatar'
+        src={image}
+        sx={{ width: 150, height: 150 }}
         />
 
         <Typography
             fontWeight={'900'}
             className={raleway.className}
             fontSize={{xs:'18px', lg:'21px'}}
-            mt={1}
+            // mt={1}
         >
             {name}
         </Typography>
         <Typography 
+        width={'85%'}
             mt={1}
            fontWeight={'700'}
            className={dmSans.className}
