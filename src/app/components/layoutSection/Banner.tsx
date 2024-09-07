@@ -6,6 +6,7 @@ import React from 'react'
 import { VideoBanner } from './VideoBanner'
 import { South } from '@mui/icons-material'
 import { GradientText } from './GradientText'
+import { rootImages } from '@/app/core/rootImages'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -35,7 +36,7 @@ export const Banner = () => {
   return (
     <BoxBanner>
       <GradientText />
-      <Box sx={{ width: { xs: '80%', lg: '37%', xl: '60%' }, mt: '1.2rem' }}>
+      <Box sx={{ width: { xs: '80%', lg: '37%', xl: '70%' }, mt: '1.2rem' }}>
         <Typography
           variant="h4"
           gutterBottom
@@ -56,29 +57,50 @@ export const Banner = () => {
           <Box
         component="span"
               sx={{
+                  position:'relative',
                   background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                 }}
             >
-             Leads
+             <span>Leads</span>
+       
         </Box>
+
           
           {' into ' }
         
           <Box
-        component="span"
-              sx={{
-                  background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                }}
-            >
-             Paying Customers
-        </Box>
+      component="span"
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+      }}
+    >
+      <span>Paying Customers</span>
+      <img src={rootImages.payingLine} style={{ width: '35%', height: 'auto' }} />
+    </Box>
+        
         </Typography>
       </Box>
-
+      <Box
+      component="img"
+      src={rootImages.payingLine}
+      sx={{
+        width: {xs:'15%', xl:'7%'},
+        height: 'auto',
+        position: 'absolute',
+        bottom: {
+          xs: '58%',
+          xl: '63%',
+        },
+        left: {xs:'58%', lg:'70%', xl:'69%'},
+      }}
+    />
       <BtnPrimary
         width={'120px'}
         height="50px"

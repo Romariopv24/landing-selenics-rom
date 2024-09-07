@@ -27,4 +27,5 @@ export const rootImages = {
     calendar: `${dirIconsCont}calendar.svg`,
   }, 
   info: `${dir}info.svg`,
+  payingLine: `${dir}paying-line.svg`,
 }
