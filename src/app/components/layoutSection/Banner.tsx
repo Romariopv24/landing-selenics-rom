@@ -66,11 +66,11 @@ export const Banner = () => {
                     content: '""',
                     position: 'absolute',
                     left: 0,
-                    bottom: 0, // Ajusta este valor según sea necesario
-                    width: '100%',
-                    height: '7px', // Ajusta este valor según sea necesario
+                    bottom: {xs:-2, xl:0}, 
+                    width: {xs:'105%',lg:'110%', xl:'100%'},
+                    height: {xs:'4px', lg:'7px', xl:'7px'}, 
                    backgroundImage: `url(${rootImages.payingLine})`,
-                  backgroundSize: 'cover', // Ajusta el tamaño de la imagen según sea necesario
+                  backgroundSize: 'cover', 
                   backgroundRepeat: 'no-repeat',
                   },
                 }}
