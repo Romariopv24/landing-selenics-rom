@@ -134,7 +134,7 @@ export const TeamContainer = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-         <div className="swiper-pagination" style={{ marginTop: '20px' }}></div>
+         <div className="swiper-pagination" style={{ display:'none' }}></div>
     </Box>
     </>
   )

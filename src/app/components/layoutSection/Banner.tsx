@@ -5,6 +5,7 @@ import { DM_Sans, Raleway } from 'next/font/google'
 import React from 'react'
 import { VideoBanner } from './VideoBanner'
 import { South } from '@mui/icons-material'
+import { GradientText } from './GradientText'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -33,27 +34,7 @@ const dmSans = DM_Sans({
 export const Banner = () => {
   return (
     <BoxBanner>
-      <Box sx={{ width: { xs: '90%', lg: '40%', xl: '45%' } }}>
-        <Typography
-          variant="h1"
-          gutterBottom
-          className={raleway.className}
-          sx={{
-            fontWeight: 900,
-            textAlign: 'center',
-            fontSize: {
-              xs: '2rem',
-              sm: '4rem',
-              md: '5rem',
-              lg: '3rem',
-              xl: '4rem',
-            },
-            textTransform: 'uppercase',
-          }}
-        >
-          Struggling to Sell Your Workshop?
-        </Typography>
-      </Box>
+      <GradientText />
       <Box sx={{ width: { xs: '80%', lg: '37%', xl: '40%' }, mt: '1.2rem' }}>
         <Typography
           variant="h4"
@@ -106,7 +87,7 @@ const BoxBanner = styled(Box)(({ theme }) => ({
   justifyContent: 'center',
   width: '100%',
   margin: 'auto',
-  marginTop: '6rem',
+  marginTop: '7rem',
   [theme.breakpoints.between('lg', 'xl')]: {},
   [theme.breakpoints.between('xs', 'sm')]: {
     marginTop: '8rem',

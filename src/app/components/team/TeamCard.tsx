@@ -55,19 +55,20 @@ export const TeamCard : React.FC<TeamCardProps> = ({
         sx={{ width: 100, height: 100 }}
         />
 
-
         <Typography
             fontWeight={'900'}
             className={raleway.className}
-            fontSize={{xs:'30px', lg:'40px'}}
+            fontSize={{xs:'18px', lg:'21px'}}
+            mt={1}
         >
             {name}
         </Typography>
         <Typography 
-           fontWeight={'900'}
+            mt={1}
+           fontWeight={'700'}
            className={dmSans.className}
            textAlign={'center'}
-           fontSize={{xs:'30px', lg:'20px'}}
+           fontSize={{xs:'15px', lg:'18px'}}
         >
             {profesion}
         </Typography>

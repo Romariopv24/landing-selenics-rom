@@ -5,6 +5,7 @@ import { Sidebar } from '../sidebar/page'
 import Image from 'next/image'
 import { rootImages } from '@/app/core/rootImages'
 import { Raleway } from 'next/font/google'
+import { BookNow } from './BookNow'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -15,6 +16,15 @@ const raleway = Raleway({
 export const Navbar = () => {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(true);
+    }, 2000)
+
+    return () => clearTimeout(timer);
+  }, [])
 
   const toggleDrawer = (open: boolean) => () => setOpen(open)
 
@@ -34,36 +44,39 @@ export const Navbar = () => {
   }, [])
 
   return (
-    <MainContainer scrolled={scrolled ? true : undefined}>
-      <MenuContainer>
-        <Image
-          src={rootImages.logo}
-          alt="Logo"
-          width={'150'}
-          height={'60'}
-          className="relative"
-        />
-        <Box sx={styledBox}>
-          {[
-            'lorem one',
-            'lorem two',
-            'lorem three',
-            'lorem four',
-            'lorem five',
-          ].map((loremp: string, index: number) => (
-            <Typography
-              className={raleway.className}
-              key={index}
-              gutterBottom
-              sx={{ margin: 'auto' }}
-            >
-              {loremp}
-            </Typography>
-          ))}
-        </Box>
-        <Sidebar open={open} toggleDrawer={toggleDrawer} />
-      </MenuContainer>
-    </MainContainer>
+    <Stack spacing={visible ? 6 : 0 } alignItems="center" justifyContent="center">
+      <BookNow  visible={visible} setVisible={setVisible}/>
+      <MainContainer scrolled={scrolled ? true : undefined}>
+        <MenuContainer>
+          <Image
+            src={rootImages.logo}
+            alt="Logo"
+            width={'150'}
+            height={'60'}
+            className="relative"
+          />
+          <Box sx={styledBox}>
+            {[
+              'lorem one',
+              'lorem two',
+              'lorem three',
+              'lorem four',
+              'lorem five',
+            ].map((loremp: string, index: number) => (
+              <Typography
+                className={raleway.className}
+                key={index}
+                gutterBottom
+                sx={{ margin: 'auto' }}
+              >
+                {loremp}
+              </Typography>
+            ))}
+          </Box>
+          <Sidebar open={open} toggleDrawer={toggleDrawer} />
+        </MenuContainer>
+      </MainContainer>
+    </Stack>
   )
 }
 
