@@ -29,7 +29,7 @@ const mainContainer = {
     `,
     xs: `
         radial-gradient(circle at 10% -100%, #3b2369, transparent 44%),
-        radial-gradient(circle at 170% 6%, #4f359a, transparent 70%),
+        radial-gradient(circle at -10% 8%, #5f1869, transparent 44%),
         radial-gradient(circle at 20% 90%, #11649b, transparent 50%)
     `,
     },
