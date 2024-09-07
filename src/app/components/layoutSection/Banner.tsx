@@ -66,17 +66,33 @@ export const Banner = () => {
                     content: '""',
                     position: 'absolute',
                     left: 0,
-                    bottom: {xs:-2, xl:0}, 
+                    bottom: {xs:0, xl:0}, 
                     width: {xs:'105%',lg:'110%', xl:'100%'},
                     height: {xs:'4px', lg:'7px', xl:'7px'}, 
-                   backgroundImage: `url(${rootImages.payingLine})`,
-                  backgroundSize: 'cover', 
-                  backgroundRepeat: 'no-repeat',
+                    backgroundImage: `url(${rootImages.payingLine})`,
+                    backgroundSize: 'cover', 
+                    backgroundRepeat: 'no-repeat',
                   },
+                  animation: 'moveGradient 10s infinite linear',
+                  '@keyframes moveGradient': {
+                '0%': {
+                  backgroundPosition: '0% 50%',
+                },
+                '50%': {
+                  backgroundPosition: '100% 50%',
+                },
+                '100%': {
+                  backgroundPosition: '0% 50%',
+                },
+              },
+               backgroundSize: '200% 200%',
                 }}
             >
              <span
-          
+            style={{
+              textTransform: 'uppercase',
+              fontWeight:'bolder'
+            }}
              >
               Leads
               </span>
@@ -93,10 +109,41 @@ export const Banner = () => {
         background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
+        animation: 'moveGradient 10s infinite linear',
+        '@keyframes moveGradient': {
+          '0%': {
+            backgroundPosition: '0% 50%',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+          },
+          '100%': {
+            backgroundPosition: '0% 50%',
+          },
+        },
+         backgroundSize: '200% 200%',
       }}
     >
-      <span>Paying Customers</span>
-      <img src={rootImages.payingLine} style={{ width: '35%', height: 'auto' }} />
+      <span
+        style={{
+          textTransform: 'uppercase',
+          fontWeight:'bolder'
+        }}
+      >Paying Customers</span>
+   <Box
+      component="img"
+      src={rootImages.payingLine}
+      sx={{
+        width: {
+          xs: '55vw', 
+          sm: '35vw', 
+          md: '35vw', 
+          lg: '25vw', 
+          xl: '30%', // Tamaño para pantallas extra grandes
+        },
+        height: 'auto',
+      }}
+    />
     </Box>
         
         </Typography>

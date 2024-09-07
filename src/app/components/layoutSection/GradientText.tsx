@@ -29,32 +29,75 @@ export const GradientText = () => {
         textTransform: 'uppercase',
       }}
     >
-  <Box
-    component="span"
-    sx={{
-      color: '#8250ed',
-    }}
-  >
-    Struggling t
-  </Box>
+<Box
+      component="span"
+      sx={{
+        background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        animation: 'moveGradient 10s infinite linear',
+        '@keyframes moveGradient': {
+          '0%': {
+            backgroundPosition: '0% 50%',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+          },
+          '100%': {
+            backgroundPosition: '0% 50%',
+          },
+        },
+        backgroundSize: '200% 200%',
+      }}
+    >
+      Struggling t
+    </Box>
   <Box
     component="span"
     sx={{
       background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
+      animation: 'moveGradient 10s infinite linear',
+      '@keyframes moveGradient': {
+        '0%': {
+          backgroundPosition: '0% 50%',
+        },
+        '50%': {
+          backgroundPosition: '100% 50%',
+        },
+        '100%': {
+          backgroundPosition: '0% 50%',
+        },
+      },
+       backgroundSize: '200% 200%',
     }}
   >
     o Sell
   </Box>
   <Box
-    component="span"
-    sx={{
-      color: '#8250ed',
-    }}
-  >
-    {' Your'}
-  </Box>
+      component="span"
+      sx={{
+        background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        animation: 'moveGradient 10s infinite linear',
+        '@keyframes moveGradient': {
+          '0%': {
+            backgroundPosition: '0% 50%',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+          },
+          '100%': {
+            backgroundPosition: '0% 50%',
+          },
+        },
+        backgroundSize: '200% 200%',
+      }}
+    >
+      {' Your'}
+    </Box>
   {' Workshop?'}
     </Typography>
   </Box>
@@ -84,6 +127,19 @@ export const GradientText = () => {
         background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
+        animation: 'moveGradient 10s infinite linear',
+        '@keyframes moveGradient': {
+          '0%': {
+            backgroundPosition: '0% 50%',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+          },
+          '100%': {
+            backgroundPosition: '0% 50%',
+          },
+        },
+         backgroundSize: '200% 200%',
       }}
   >
     Struggling t
@@ -94,6 +150,19 @@ export const GradientText = () => {
       background: 'linear-gradient(to right,  #c67bcb, #4ddefe, #8250ed 30%)',
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
+      animation: 'moveGradient 10s infinite linear',
+      '@keyframes moveGradient': {
+    '0%': {
+      backgroundPosition: '0% 50%',
+    },
+    '50%': {
+      backgroundPosition: '100% 50%',
+    },
+    '100%': {
+      backgroundPosition: '0% 50%',
+    },
+  },
+   backgroundSize: '200% 200%',
     }}
   >
     o Sell
@@ -104,6 +173,20 @@ export const GradientText = () => {
         background: 'linear-gradient(to right,  #8250ed, #c67bcb, #4ddefe 100%)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
+        animation: 'moveGradient 10s infinite linear',
+        
+        '@keyframes moveGradient': {
+          '0%': {
+            backgroundPosition: '0% 50%',
+          },
+          '50%': {
+            backgroundPosition: '100% 50%',
+          },
+          '100%': {
+            backgroundPosition: '0% 50%',
+          },
+        },
+         backgroundSize: '200% 200%',
       }}
   >
     {' Your'}
