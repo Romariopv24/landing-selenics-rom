@@ -58,16 +58,30 @@ export const Banner = () => {
         component="span"
               sx={{
                   position:'relative',
+                  zIndex: 2,
                   background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
+                  '&::after': {
+                    content: '""',
+                    position: 'absolute',
+                    left: 0,
+                    bottom: 0, // Ajusta este valor según sea necesario
+                    width: '100%',
+                    height: '7px', // Ajusta este valor según sea necesario
+                   backgroundImage: `url(${rootImages.payingLine})`,
+                  backgroundSize: 'cover', // Ajusta el tamaño de la imagen según sea necesario
+                  backgroundRepeat: 'no-repeat',
+                  },
                 }}
             >
-             <span>Leads</span>
-       
-        </Box>
-
+             <span
           
+             >
+              Leads
+              </span>
+  
+        </Box>
           {' into ' }
         
           <Box
@@ -87,7 +101,7 @@ export const Banner = () => {
         
         </Typography>
       </Box>
-      <Box
+      {/* <Box
       component="img"
       src={rootImages.payingLine}
       sx={{
@@ -100,7 +114,7 @@ export const Banner = () => {
         },
         left: {xs:'58%', lg:'70%', xl:'69%'},
       }}
-    />
+    /> */}
       <BtnPrimary
         width={'120px'}
         height="50px"
