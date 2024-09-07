@@ -3,7 +3,7 @@ import { DM_Sans, Raleway } from "next/font/google";
 import "./globals.css";
 import { responsiveTheme } from "@/theme/theme";
 import { ThemeProvider } from "@mui/material";
-import { Navigation } from "./components/navigation/page";
+
 
 const raleway = Raleway({
   subsets: ['latin'],

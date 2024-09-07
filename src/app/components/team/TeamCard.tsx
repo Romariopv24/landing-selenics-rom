@@ -35,8 +35,7 @@ export const TeamCard : React.FC<TeamCardProps> = ({
     textthree,
   }) => {
   return (
-    <Box display="flex" flexDirection="column"  width={{lg:'20rem'}
-}
+    <Box display="flex" flexDirection="column"  
     sx={{
         background: `
           radial-gradient(circle at 10% 10%, #2a2936, transparent 50%),
@@ -44,15 +43,17 @@ export const TeamCard : React.FC<TeamCardProps> = ({
         `,
         border: '5px solid white',
         borderRadius: '20px',
+        width: { lg:'23rem'},
+        height: '92%'
       }}
     >
- <Stack my={4} alignItems="center" >
+  <Stack my={4} alignItems="center" >
       
       <Avatar
         alt="Remy Sharp"
         src="/static/images/avatar/1.jpg"
         sx={{ width: 100, height: 100 }}
-/>
+        />
 
 
         <Typography
@@ -66,7 +67,7 @@ export const TeamCard : React.FC<TeamCardProps> = ({
            fontWeight={'900'}
            className={dmSans.className}
            textAlign={'center'}
-           fontSize={{xs:'30px', lg:'50px'}}
+           fontSize={{xs:'30px', lg:'20px'}}
         >
             {profesion}
         </Typography>
