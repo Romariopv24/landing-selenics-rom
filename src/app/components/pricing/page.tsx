@@ -36,3 +36,8 @@ const mainContainer = {
   padding: '2rem',
 }
 
+// 11649b
+// 4f359a
+// 5f1869
+
+// radial-gradient(circle at -10% 8%, #5f1869, transparent 44%), union mobile
