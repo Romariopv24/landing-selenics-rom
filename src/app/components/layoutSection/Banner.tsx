@@ -35,26 +35,47 @@ export const Banner = () => {
   return (
     <BoxBanner>
       <GradientText />
-      <Box sx={{ width: { xs: '80%', lg: '37%', xl: '40%' }, mt: '1.2rem' }}>
+      <Box sx={{ width: { xs: '80%', lg: '37%', xl: '60%' }, mt: '1.2rem' }}>
         <Typography
           variant="h4"
           gutterBottom
           className={dmSans.className}
           sx={{
-            textTransform: 'uppercase',
             textAlign: 'center',
-            fontWeight: '500',
+            fontWeight: '700',
             fontSize: {
               xs: '1.2rem',
               sm: '1.5rem',
               md: '2rem',
-              lg: '1rem',
-              xl: '1.2rem',
+              lg: '2rem',
+              xl: '2.5rem',
             },
           }}
         >
-          We Help Coaches and Experts Like You Convert Leads into Paying
-          Customers
+          {'We Help Coaches and Experts Like You Convert '}
+          <Box
+        component="span"
+              sx={{
+                  background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                }}
+            >
+             Leads
+        </Box>
+          
+          {' into ' }
+        
+          <Box
+        component="span"
+              sx={{
+                  background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                }}
+            >
+             Paying Customers
+        </Box>
         </Typography>
       </Box>
 

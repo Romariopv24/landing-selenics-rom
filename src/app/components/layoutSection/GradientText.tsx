@@ -11,7 +11,7 @@ const raleway = Raleway({
 export const GradientText = () => {
   return (
     <>
-    <Box display={{xs: 'none', lg:'flex'}} sx={{ width: { xs: '90%', lg: '40%', xl: '45%' } }}>
+    <Box display={{xs: 'none', lg:'flex'}} sx={{ width: { xs: '90%', lg: '40%', xl: '55%' } }}>
     <Typography
       variant="h1"
       gutterBottom
@@ -24,7 +24,7 @@ export const GradientText = () => {
           sm: '4rem',
           md: '5rem',
           lg: '3rem',
-          xl: '4rem',
+          xl: '5rem',
         },
         textTransform: 'uppercase',
       }}
