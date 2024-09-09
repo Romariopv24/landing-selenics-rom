@@ -1,5 +1,4 @@
 import { Stack, Typography } from '@mui/material'
-import React from 'react'
 import { FaqsContainer } from './FaqsContainer'
 import { Raleway } from 'next/font/google'
 
