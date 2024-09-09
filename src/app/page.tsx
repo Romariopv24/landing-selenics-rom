@@ -19,7 +19,9 @@ export default function Home() {
       <ResultsComponent />
       <FitComponent />
       <MakeItHappenContainer />
+      <section id="book-now-section">
       <PricingComponent />
+      </section>
       <TeamComponent />
       <FaqsComponent />
     </>

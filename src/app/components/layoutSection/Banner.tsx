@@ -8,6 +8,7 @@ import { South } from '@mui/icons-material'
 import { GradientText } from './GradientText'
 import { rootImages } from '@/app/core/rootImages'
 import Typewriter from 'typewriter-effect'
+import Link from 'next/link'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -168,6 +169,7 @@ export const Banner = () => {
         left: {xs:'58%', lg:'70%', xl:'69%'},
       }}
     /> */}
+        <Link href="#book-now-section">
       <BtnPrimary
         width={'120px'}
         height="50px"
@@ -177,6 +179,7 @@ export const Banner = () => {
       >
         Book a Call
       </BtnPrimary>
+        </Link>
 
       <VideoBanner />
 
@@ -189,7 +192,11 @@ export const Banner = () => {
         <Typography 
       color={'white'}
         
-        >Scroll for more</Typography>
+        >
+           <Link href="#book-now-section">
+          Scroll for more
+          </Link>
+          </Typography>
         <South 
           sx={{
             color:'white'

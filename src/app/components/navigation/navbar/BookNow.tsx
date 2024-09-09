@@ -26,7 +26,7 @@ export const BookNow = ({visible, setVisible}: Props) => {
             <Typography 
            className={dmSans.className}
             sx={{ color: 'white', fontSize:{xs:'12px',lg:'15px'} }}>
-                <Link href="#" style={{ color: 'white', textDecoration: 'underline' }} onClick={handleClick}>
+       <Link href="#book-now-section" style={{ color: 'white', textDecoration: 'underline' }} onClick={handleClick}>
                     Book Now Before We Run Out of Spots!
                 </Link>
                  <span style={{ marginLeft: '8px' }}>Only 4 Left</span>

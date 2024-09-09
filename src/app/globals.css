@@ -21,6 +21,10 @@ body {
   background-color: var(--background-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .text1 {
   font-family: var(--font-raleway);
 }
