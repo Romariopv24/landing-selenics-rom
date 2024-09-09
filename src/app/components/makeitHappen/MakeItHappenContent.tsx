@@ -42,6 +42,7 @@ export const MakeItHappenContent = () => {
   return (
         <Stack  mt={{ xl: 5 }} alignContent={'center'} width={{lg: '70%', xl:'60%'}}>
         <Typography
+        color='white'
                 sx={{
                 fontWeight: 900,
                 textAlign: 'left',
@@ -78,6 +79,7 @@ export const MakeItHappenContent = () => {
         alignItems="center"
       >
         <Typography
+        color='white'
           className={raleway.className}
           fontWeight={'700'}
           fontSize={{ xs: '18px', lg: '22px' }}
@@ -87,6 +89,7 @@ export const MakeItHappenContent = () => {
           {item.title}
         </Typography>
         <Typography
+        color='white'
           width={{lg:'70%'}}
           className={dmSans.className}
           fontSize={{ xs: '14px', lg: '18px' }}

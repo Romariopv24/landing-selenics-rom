@@ -1,6 +1,7 @@
+'use client'
 import { Box, Typography } from '@mui/material'
 import { Raleway } from 'next/font/google'
-import React from 'react'
+import Typewriter from 'typewriter-effect'
 
 const raleway = Raleway({
     subsets: ['latin'],
@@ -9,10 +10,12 @@ const raleway = Raleway({
   })
 
 export const GradientText = () => {
+  
   return (
     <>
     <Box display={{xs: 'none', lg:'flex'}} sx={{ width: { xs: '90%', lg: '40%', xl: '55%' } }}>
     <Typography
+      color={'white'}
       variant="h1"
       gutterBottom
       className={raleway.className}
@@ -29,82 +32,96 @@ export const GradientText = () => {
         textTransform: 'uppercase',
       }}
     >
-<Box
-      component="span"
-      sx={{
-        background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        animation: 'moveGradient 10s infinite linear',
-        '@keyframes moveGradient': {
-          '0%': {
-            backgroundPosition: '0% 50%',
+      <Box
+        component="span"
+        sx={{
+          background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          animation: 'moveGradient 10s infinite linear',
+          '@keyframes moveGradient': {
+            '0%': {
+              backgroundPosition: '0% 50%',
+            },
+            '50%': {
+              backgroundPosition: '100% 50%',
+            },
+            '100%': {
+              backgroundPosition: '0% 50%',
+            },
           },
-          '50%': {
-            backgroundPosition: '100% 50%',
+          backgroundSize: '200% 200%',
+        }}
+      >
+        Struggling t
+      </Box>
+      <Box
+        component="span"
+        sx={{
+          background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          animation: 'moveGradient 10s infinite linear',
+          '@keyframes moveGradient': {
+            '0%': {
+              backgroundPosition: '0% 50%',
+            },
+            '50%': {
+              backgroundPosition: '100% 50%',
+            },
+            '100%': {
+              backgroundPosition: '0% 50%',
+            },
           },
-          '100%': {
-            backgroundPosition: '0% 50%',
+          backgroundSize: '200% 200%',
+        }}
+      >
+        o Sell
+      </Box>
+      <Box
+        component="span"
+        sx={{
+          background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          animation: 'moveGradient 10s infinite linear',
+          '@keyframes moveGradient': {
+            '0%': {
+              backgroundPosition: '0% 50%',
+            },
+            '50%': {
+              backgroundPosition: '100% 50%',
+            },
+            '100%': {
+              backgroundPosition: '0% 50%',
+            },
           },
-        },
-        backgroundSize: '200% 200%',
-      }}
-    >
-      Struggling t
-    </Box>
-  <Box
-    component="span"
-    sx={{
-      background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      animation: 'moveGradient 10s infinite linear',
-      '@keyframes moveGradient': {
-        '0%': {
-          backgroundPosition: '0% 50%',
-        },
-        '50%': {
-          backgroundPosition: '100% 50%',
-        },
-        '100%': {
-          backgroundPosition: '0% 50%',
-        },
-      },
-       backgroundSize: '200% 200%',
-    }}
-  >
-    o Sell
-  </Box>
-  <Box
-      component="span"
-      sx={{
-        background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        animation: 'moveGradient 10s infinite linear',
-        '@keyframes moveGradient': {
-          '0%': {
-            backgroundPosition: '0% 50%',
-          },
-          '50%': {
-            backgroundPosition: '100% 50%',
-          },
-          '100%': {
-            backgroundPosition: '0% 50%',
-          },
-        },
-        backgroundSize: '200% 200%',
-      }}
-    >
-      {' Your'}
-    </Box>
-  {' Workshop?'}
+          backgroundSize: '200% 200%',
+        }}
+      >
+        {' Your '}
+      </Box>
+      <Box
+        component="span"
+        sx={{
+          display: 'inline-block',
+        }}
+      >
+          <Typewriter
+          options={{
+            strings: ['Workshop?'],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </Box>
     </Typography>
   </Box>
   {/* mobile */}
 
   <Box display={{xs:'flex', lg:'none'}} sx={{ width: { xs: '90%', lg: '40%', xl: '45%' } }}>
    <Typography
+      color={'white'}
       variant="h1"
       gutterBottom
       className={raleway.className}
@@ -191,7 +208,13 @@ export const GradientText = () => {
   >
     {' Your'}
   </Box>
-  {' Workshop?'}
+       <Typewriter
+          options={{
+            strings: ['Workshop?'],
+            autoStart: true,
+            loop: true,
+          }}
+        />
     </Typography>
     </Box>
   </>

@@ -31,6 +31,7 @@ export const Cards = () => {
     >
         <Stack mt={4} alignItems="center">
         <Typography
+        color='white'
             fontWeight={'900'}
             className={raleway.className}
             fontSize={{xs:'30px', lg:'40px'}}
@@ -38,6 +39,7 @@ export const Cards = () => {
             Essential 
         </Typography>
         <Typography 
+        color='white'
            fontWeight={'900'}
            className={dmSans.className}
            fontSize={{xs:'40px', lg:'50px'}}
@@ -48,6 +50,7 @@ export const Cards = () => {
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
         <Box display='flex' bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'} alignSelf="center"/>
         <Typography
+        color='white'
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >
@@ -57,6 +60,7 @@ export const Cards = () => {
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
         <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/>
         <Typography
+        color='white'
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >
@@ -66,6 +70,7 @@ export const Cards = () => {
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
         <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/>
         <Typography
+        color='white'
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >
@@ -75,6 +80,7 @@ export const Cards = () => {
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
         <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/>
         <Typography 
+        color='white'
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >
@@ -84,6 +90,7 @@ export const Cards = () => {
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
         <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/>
         <Typography
+        color='white'
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >

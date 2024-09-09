@@ -23,6 +23,7 @@ export const Faqs = () => {
                
             />
             <Typography
+            color='white'
               className={raleway.className}
               fontWeight={'700'}
             >Getting Started</Typography>
@@ -46,6 +47,7 @@ export const Faqs = () => {
         <Box display="flex" alignItems="center" gap={1}>
             <InfoOutlined />
             <Typography
+            color='white'
               className={raleway.className}
               fontWeight={'700'}
             >Service Details</Typography>
@@ -69,6 +71,7 @@ export const Faqs = () => {
         <Box display="flex" alignItems="center" gap={1}>
         <BuildOutlined sx={{ transform: 'scaleX(-1)' }} />
             <Typography
+            color='white'
               className={raleway.className}
               fontWeight={'700'}
             >Project Execution</Typography>
@@ -76,6 +79,7 @@ export const Faqs = () => {
       </AccordionSummary>
       <AccordionDetails>
         <Typography 
+        color='white'
           className={raleway.className}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -92,6 +96,7 @@ export const Faqs = () => {
         <Box display="flex" alignItems="center" gap={1}>
             <HeadsetMicOutlined />
             <Typography 
+            color='white'
             className={raleway.className}
             fontWeight={'700'}
             >Support and Communication</Typography>
@@ -99,6 +104,7 @@ export const Faqs = () => {
       </AccordionSummary>
       <AccordionDetails>
         <Typography 
+        color='white'
             className={raleway.className}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse

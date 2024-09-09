@@ -31,6 +31,7 @@ sx={{
 >
     <Stack mt={4} alignItems="center">
     <Typography
+                color='white'
         fontWeight={'900'}
         className={raleway.className}
         fontSize={{xs:'30px', lg:'40px'}}
@@ -38,6 +39,8 @@ sx={{
         Ultimate
     </Typography>
     <Typography 
+                color='white'
+
        fontWeight={'900'}
        className={dmSans.className}
        fontSize={{xs:'40px', lg:'50px'}}
@@ -49,6 +52,8 @@ sx={{
      <Stack my={2} flexDirection={'row'} width={'85%'}  alignItems={'center'} alignContent={'center'} gap={1}>
         <img src={rootImages.info} style={{width:'15px', height: '15px'}}/>
         <Typography
+                color='white'
+
         className={dmSans.className}
         fontSize={{xs:'13px', lg:'15px'}}
         >
@@ -61,6 +66,8 @@ sx={{
     <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
     <Box display='flex' bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'} alignSelf="center"/>
     <Typography
+                color='white'
+
     className={dmSans.className}
     fontSize={{xs:'12px', lg:'15px'}}
     >
@@ -73,6 +80,7 @@ sx={{
     <Stack mt={{xs:20, lg:18, xl: 17}} justifyContent={'center'}  alignItems="center">       
          <BtnPrimary width={'7rem'} height={'40px'} boxShadow={true} transparent={false} >
          <Typography 
+         
             className={dmSans.className}
             fontSize={{xs:'14px', lg:'14px'}}
             >

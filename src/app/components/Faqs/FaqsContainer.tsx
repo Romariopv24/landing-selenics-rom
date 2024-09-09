@@ -18,6 +18,7 @@ export const FaqsContainer = () => {
   return (
     <Stack mt={{ xl: 10 }} alignContent={'center'} width={{ lg: '70%', xl: '60%' }}>
     <Typography
+    color='white'
       className={raleway.className}
       sx={{
         fontWeight: 900,
@@ -32,6 +33,7 @@ export const FaqsContainer = () => {
     <Stack flexDirection={{ xs: 'column', lg: 'row' }} mt={{ xs: 3, lg: 20 }} gap={5}>
       <Box>
         <Typography
+        color='white'
           className={dmSans.className}
           sx={{
             fontWeight: 500,

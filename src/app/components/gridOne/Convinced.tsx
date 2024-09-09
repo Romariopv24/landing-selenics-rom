@@ -14,6 +14,7 @@ export const Convinced = () => {
   return (
     <Stack mt={{xs:5, lg: 6, xl:10}} alignContent={'center'}        justifyContent={'center'} flexDirection={'column'}>
             <Typography
+        color='white'
             className={raleway.className}
             sx={{
             fontWeight: 900,

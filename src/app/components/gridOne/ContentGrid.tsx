@@ -53,6 +53,7 @@ export const ContentGrid = () => {
   return (
     <Stack  mt={{ xl: 10 }} alignContent={'center'} width={{lg: '70%', xl:'60%'}}>
         <Typography
+        color='white'
         className={raleway.className}
         sx={{
           fontWeight: 900,
@@ -78,6 +79,7 @@ export const ContentGrid = () => {
                 </Box>
                 <Box width={'80%'} my={'auto'} display={'flex'} flexDirection={'column'} justifyContent={'start'} alignContent={'flex-start'}>
                   <Typography 
+                color='white'
                     className={raleway.className}
                     fontWeight={'700'}
                     fontSize={{xs:'18px', lg:'20px'}}
@@ -85,6 +87,7 @@ export const ContentGrid = () => {
                     {item.title}
                   </Typography>
                   <Typography
+                 color='white'
                   width={'90%'}
                     className={dmSans.className}
                     fontSize={{xs:'14px', lg:'17px'}}

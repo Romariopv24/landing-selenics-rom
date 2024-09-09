@@ -10,7 +10,9 @@ export const Sidebar = ({open, toggleDrawer}: Props) => {
     <>
      <Menu onClick={toggleDrawer(true)}
      sx={{
-      display:{xs: 'flex', lg: 'none'}
+      display:{xs: 'flex', lg: 'none'},
+      color: 'white',
+      cursor:'pointer'
      }}
      /> 
        <Drawer

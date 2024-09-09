@@ -19,6 +19,7 @@ export const PricingContent = () => {
   return (
     <Stack  mt={{ xl: 10 }} alignContent={'center'} width={{lg: '70%', xl:'60%'}}>
     <Typography
+        color='white'
         className={raleway.className}
         sx={{
           fontWeight: 900,

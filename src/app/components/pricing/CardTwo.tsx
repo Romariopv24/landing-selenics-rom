@@ -89,6 +89,7 @@ export const CardTwo = () => {
         }}
       >
         <Typography
+                color='white'
           fontWeight="900"
           className={raleway.className}
           mt={1}
@@ -125,6 +126,8 @@ export const CardTwo = () => {
   >
     <Stack mt={4} alignItems="center">
       <Typography
+                color='white'
+
         fontWeight={'900'}
         className={raleway.className}
         fontSize={{ xs: '30px', md: '25px', lg: '40px' }} // Ajusta el tamaño de fuente en lg
@@ -132,6 +135,8 @@ export const CardTwo = () => {
         Growth
       </Typography>
       <Typography
+                color='white'
+
         fontWeight={'900'}
         className={dmSans.className}
         fontSize={{ xs: '40px', md: '38px', lg: '50px' }} // Ajusta el tamaño de fuente en lg
@@ -142,6 +147,8 @@ export const CardTwo = () => {
       <Stack my={2} flexDirection={'row'} width={{ xs: '85%', md: '70%', lg: '85%' }} alignItems={'center'} alignContent={'center'} gap={1}>
         <img src={rootImages.info} style={{ width: '15px', height: '15px' }} />
         <Typography
+                color='white'
+
           className={dmSans.className}
           fontSize={{ xs: '13px', md: '11px', lg: '15px' }} // Ajusta el tamaño de fuente en lg
         >
@@ -153,6 +160,8 @@ export const CardTwo = () => {
         <Stack flexDirection={'row'} alignItems={'center'} alignContent={'center'} gap={1}>
           <Box display='flex' bgcolor={'white'} width={'5px'} height={'5px'} borderRadius={'50rem'} alignSelf="center" />
           <Typography
+                color='white'
+
             className={dmSans.className}
             fontSize={{ xs: '12px', md: '10px', lg: '15px' }} // Ajusta el tamaño de fuente en lg
           >
@@ -163,6 +172,8 @@ export const CardTwo = () => {
         <Stack flexDirection={'row'} alignItems={'center'} alignContent={'center'} gap={1}>
           <Box bgcolor={'white'} width={'5px'} height={'5px'} borderRadius={'50rem'} />
           <Typography
+                color='white'
+
             className={dmSans.className}
             fontSize={{ xs: '12px', md: '10px', lg: '15px' }} // Ajusta el tamaño de fuente en lg
           >
@@ -172,6 +183,8 @@ export const CardTwo = () => {
         <Stack flexDirection={'row'} alignItems={'center'} alignContent={'center'} gap={1}>
           <Box bgcolor={'white'} width={'5px'} height={'5px'} borderRadius={'50rem'} />
           <Typography
+                color='white'
+
             className={dmSans.className}
             fontSize={{ xs: '12px', md: '10px', lg: '15px' }} // Ajusta el tamaño de fuente en lg
           >

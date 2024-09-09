@@ -15,6 +15,7 @@ export const FaqsComponent = () => {
         <FaqsContainer />
         <Stack sx={{ marginTop: 'auto', marginBottom: '2px' }}>
       <Typography
+      color='white'
         className={raleway.className}
         sx={{
           textAlign: 'center',
@@ -46,7 +47,7 @@ const mainContainer = {
       `,
       xs: `
           radial-gradient(circle at 10% -100%, #5f1869, transparent 44%),
-          radial-gradient(circle at 110% -30%, #11649b, transparent 70%),
+          radial-gradient(circle at 20% 10%, #5f1869, transparent 50%),
           radial-gradient(circle at 20% 90%, #34266e, transparent 50%)
       `,
       },

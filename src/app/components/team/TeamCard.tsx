@@ -58,6 +58,7 @@ export const TeamCard : React.FC<TeamCardProps> = ({
         />
 
         <Typography
+        color='white'
             fontWeight={'900'}
             className={raleway.className}
             fontSize={{xs:'18px', lg:'21px'}}
@@ -66,6 +67,7 @@ export const TeamCard : React.FC<TeamCardProps> = ({
             {name}
         </Typography>
         <Typography 
+        color='white'
         width={'85%'}
             mt={1}
            fontWeight={'700'}
@@ -79,6 +81,7 @@ export const TeamCard : React.FC<TeamCardProps> = ({
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
         <Box display='flex' bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'} alignSelf="center"/>
         <Typography
+        color='white'
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >
@@ -88,6 +91,7 @@ export const TeamCard : React.FC<TeamCardProps> = ({
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
         <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/>
         <Typography
+        color='white'
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >
@@ -97,6 +101,7 @@ export const TeamCard : React.FC<TeamCardProps> = ({
         <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
         <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/>
         <Typography
+        color='white'
         className={dmSans.className}
         fontSize={{xs:'12px', lg:'15px'}}
         >

@@ -12,6 +12,7 @@ export const ContentResults = () => {
   return (
     <Stack mt={{ xl: 5 }} alignContent={'center'}>
       <Typography
+        color='white'
         className={raleway.className}
         sx={{
           fontWeight: 900,
@@ -47,6 +48,7 @@ export const ContentResults = () => {
             />
           </Box>
           <Typography
+            color='white'
             className={raleway.className}
             sx={{
               fontWeight: 700,
@@ -57,6 +59,7 @@ export const ContentResults = () => {
             Budget and Results of Campaigns
           </Typography>
           <Typography
+             color='white'
             className={raleway.className}
             mt={2}
             textAlign={'left'}
@@ -82,6 +85,7 @@ export const ContentResults = () => {
           
           </Box>
           <Typography
+        color='white'
             className={raleway.className}
             sx={{
               fontWeight: 700,
@@ -92,6 +96,7 @@ export const ContentResults = () => {
             Your Tracked and Optimized Success
           </Typography>
           <Typography
+        color='white'
             className={raleway.className}
             mt={2}
             textAlign={'left'}

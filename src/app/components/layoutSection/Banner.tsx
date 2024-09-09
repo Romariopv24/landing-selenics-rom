@@ -7,6 +7,7 @@ import { VideoBanner } from './VideoBanner'
 import { South } from '@mui/icons-material'
 import { GradientText } from './GradientText'
 import { rootImages } from '@/app/core/rootImages'
+import Typewriter from 'typewriter-effect'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -37,116 +38,121 @@ export const Banner = () => {
     <BoxBanner>
       <GradientText />
       <Box sx={{ width: { xs: '80%', lg: '37%', xl: '70%' }, mt: '1.2rem' }}>
-        <Typography
-          variant="h4"
-          gutterBottom
-          className={dmSans.className}
-          sx={{
-            textAlign: 'center',
-            fontWeight: '700',
-            fontSize: {
-              xs: '1.2rem',
-              sm: '1.5rem',
-              md: '2rem',
-              lg: '2rem',
-              xl: '2.5rem',
-            },
-          }}
-        >
-          {'We Help Coaches and Experts Like You Convert '}
-          <Box
-        component="span"
-              sx={{
-                  position:'relative',
-                  zIndex: 2,
-                  background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  '&::after': {
-                    content: '""',
-                    position: 'absolute',
-                    left: 0,
-                    bottom: {xs:0, xl:0}, 
-                    width: {xs:'105%',lg:'110%', xl:'100%'},
-                    height: {xs:'4px', lg:'7px', xl:'7px'}, 
-                    backgroundImage: `url(${rootImages.payingLine})`,
-                    backgroundSize: 'cover', 
-                    backgroundRepeat: 'no-repeat',
-                  },
-                  animation: 'moveGradient 10s infinite linear',
-                  '@keyframes moveGradient': {
-                '0%': {
-                  backgroundPosition: '0% 50%',
-                },
-                '50%': {
-                  backgroundPosition: '100% 50%',
-                },
-                '100%': {
-                  backgroundPosition: '0% 50%',
-                },
-              },
-               backgroundSize: '200% 200%',
-                }}
-            >
-             <span
-            style={{
-              textTransform: 'uppercase',
-              fontWeight:'bolder'
-            }}
-             >
-              Leads
-              </span>
-  
-        </Box>
-          {' into ' }
-        
-          <Box
-      component="span"
+      <Typography
+      color={'white'}
+      variant="h4"
+      gutterBottom
+      className={dmSans.className}
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        animation: 'moveGradient 10s infinite linear',
-        '@keyframes moveGradient': {
-          '0%': {
-            backgroundPosition: '0% 50%',
-          },
-          '50%': {
-            backgroundPosition: '100% 50%',
-          },
-          '100%': {
-            backgroundPosition: '0% 50%',
-          },
+        textAlign: 'center',
+        fontWeight: '700',
+        fontSize: {
+          xs: '1.2rem',
+          sm: '1.5rem',
+          md: '2rem',
+          lg: '2rem',
+          xl: '2.5rem',
         },
-         backgroundSize: '200% 200%',
       }}
     >
-      <span
-        style={{
-          textTransform: 'uppercase',
-          fontWeight:'bolder'
+      {'We Help Coaches and Experts Like You Convert '}
+      <Box
+        component="span"
+        sx={{
+          position: 'relative',
+          zIndex: 2,
+          background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          display: 'inline-block',
+          '&::after': {
+            content: '""',
+            position: 'absolute',
+            left: 0,
+            bottom: { xs: 0, xl: 0 },
+            width: { xs: '105%', lg: '110%', xl: '100%' },
+            height: { xs: '4px', lg: '7px', xl: '7px' },
+            backgroundImage: `url(${rootImages.payingLine})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          },
+          animation: 'moveGradient 10s infinite linear',
+          '@keyframes moveGradient': {
+            '0%': {
+              backgroundPosition: '0% 50%',
+            },
+            '50%': {
+              backgroundPosition: '100% 50%',
+            },
+            '100%': {
+              backgroundPosition: '0% 50%',
+            },
+          },
+          backgroundSize: '200% 200%',
         }}
-      >Paying Customers</span>
-   <Box
-      component="img"
-      src={rootImages.payingLine}
-      sx={{
-        width: {
-          xs: '55vw', 
-          sm: '35vw', 
-          md: '35vw', 
-          lg: '25vw', 
-          xl: '30%', // Tamaño para pantallas extra grandes
-        },
-        height: 'auto',
-      }}
-    />
-    </Box>
-        
-        </Typography>
+      >
+        <span
+          style={{
+            textTransform: 'uppercase',
+            fontWeight: 'bolder',
+          }}
+        >
+          <Typewriter
+            options={{
+              strings: ['Leads'],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </span>
+      </Box>
+      {' into '}
+      <Box
+        component="span"
+        sx={{
+          display: 'inline-block',
+          background: 'linear-gradient(to right, #8250ed, #c67bcb, #4ddefe 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          animation: 'moveGradient 10s infinite linear',
+          '@keyframes moveGradient': {
+            '0%': {
+              backgroundPosition: '0% 50%',
+            },
+            '50%': {
+              backgroundPosition: '100% 50%',
+            },
+            '100%': {
+              backgroundPosition: '0% 50%',
+            },
+          },
+          backgroundSize: '200% 200%',
+        }}
+      >
+        <span
+          style={{
+            textTransform: 'uppercase',
+            fontWeight: 'bolder',
+          }}
+        >
+          Paying Customers
+        </span>
+        <Box
+          component="img"
+          src={rootImages.payingLine}
+          sx={{
+            width: {
+              xs: '55vw',
+              sm: '35vw',
+              md: '35vw',
+              lg: '25vw',
+              xl: '30%', // Tamaño para pantallas extra grandes
+            },
+            height: 'auto',
+          }}
+        />
+      </Box>
+    </Typography>
       </Box>
       {/* <Box
       component="img"
@@ -175,9 +181,20 @@ export const Banner = () => {
       <VideoBanner />
 
       <Stack flexDirection={'row'} gap={2} mt={{ xs: 0, lg: 4 }} mb={2}>
-        <South />
-        <Typography>Scroll for more</Typography>
-        <South />
+        <South  
+        sx={{
+          color:'white'
+        }}
+        />
+        <Typography 
+      color={'white'}
+        
+        >Scroll for more</Typography>
+        <South 
+          sx={{
+            color:'white'
+          }}
+        />
       </Stack>
     </BoxBanner>
   )
