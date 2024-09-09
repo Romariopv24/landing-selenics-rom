@@ -1,5 +1,6 @@
 import { Circle, Menu } from '@mui/icons-material'
 import { Box, Drawer, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
+import Link from 'next/link'
 
 interface Props {
     open: boolean
@@ -26,17 +27,27 @@ export const Sidebar = ({open, toggleDrawer}: Props) => {
                 onClick={toggleDrawer(false)}
                 onKeyDown={toggleDrawer(false)}
                 >
-                        {['lorem one', 'lorem two', 'lorem three', 'lorem four', 'lorem five'].map((lorem: string, index: number) => {
+                        {[      {text:'References', href: '#references'},
+              {text:'About Us', href: '#about'},
+              {text:' Steps', href: '#steps'},
+              {text:'Pricing', href: '#book-now-section'},
+              {text:'Team', href: '#team'},
+              {text:'Faqs', href: '#faqs'},
+                        ].map((lorem: {text: string , href: string}, index: number) => {
                             return (
-                                <ListItem key={index} disablePadding>
+                              <Link href={lorem.href} 
+                              key={index}
+                              >
+                                <ListItem disablePadding>
                                     <ListItemButton>
                                         <ListItemIcon>
                                             <Circle />
                                         </ListItemIcon>
-                                        <ListItemText primary={lorem} />
+                                        <ListItemText primary={lorem.text} />
                                     </ListItemButton>
                                 </ListItem>
-                            );
+                             </Link>
+                            )
                         })}
                  </Box>
           </Drawer>

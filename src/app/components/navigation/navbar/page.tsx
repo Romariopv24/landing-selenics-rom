@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { rootImages } from '@/app/core/rootImages'
 import { Raleway } from 'next/font/google'
 import { BookNow } from './BookNow'
+import Link from 'next/link'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -57,20 +58,24 @@ export const Navbar = () => {
           />
           <Box sx={styledBox}>
             {[
-              'lorem one',
-              'lorem two',
-              'lorem three',
-              'lorem four',
-              'lorem five',
-            ].map((loremp: string, index: number) => (
+              {text:'References', href: '#references'},
+              {text:'About Us', href: '#about'},
+              {text:' Steps', href: '#steps'},
+              {text:'Pricing', href: '#book-now-section'},
+              {text:'Team', href: '#team'},
+              {text:'Faqs', href: '#faqs'},
+            ].map((loremp: {text:string, href: string}, index: number) => (
+              <Link href={loremp.href} 
+              key={index}
+              >
               <Typography
                 className={raleway.className}
-                key={index}
                 gutterBottom
-                sx={{ margin: 'auto' }}
+                sx={{ margin: 'auto', cursor: 'pointer' }}
               >
-                {loremp}
+                {loremp.text}
               </Typography>
+              </Link>
             ))}
           </Box>
           <Sidebar open={open} toggleDrawer={toggleDrawer} />

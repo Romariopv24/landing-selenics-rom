@@ -16,14 +16,24 @@ export default function Home() {
         <Navbar />
         <Banner />
       </LayoutSection>
+      <section id="references">
       <ResultsComponent />
+      </section>
+      <section id="about">
       <FitComponent />
+      </section>
+      <section id="steps">
       <MakeItHappenContainer />
+      </section>
       <section id="book-now-section">
       <PricingComponent />
       </section>
+      <section id="team">
       <TeamComponent />
+      </section>
+      <section id="faqs">
       <FaqsComponent />
+      </section>
     </>
   )
 }
