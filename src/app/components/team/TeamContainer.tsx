@@ -94,7 +94,7 @@ export const TeamContainer = () => {
       </Typography>
     </Stack>
 
-    {/*  */}
+    {/* Swipper  */}
     <Box display={'flex'} mt={{lg:10}} width={{xs:'100%', sm:'50%',md:"100%", lg:'70%'}} alignItems={'center'} justifyContent={'center'} alignContent={'center'}>
       <Swiper
        autoplay={{ delay: 3000, disableOnInteraction: false }}
