@@ -1,7 +1,7 @@
 import { rootImages } from '@/app/core/rootImages'
 import { Box, Stack, styled } from '@mui/material'
 import React from 'react'
-import { Navbar } from '../navigation/navbar/page'
+import { Navbar } from '../navigation/navbar/Navbar'
 
 export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
   return (

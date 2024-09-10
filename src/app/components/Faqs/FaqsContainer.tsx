@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from '@mui/material'
 import { DM_Sans, Raleway } from 'next/font/google'
 import React from 'react'
-import { Faqs } from './Faqs'
+import { FaqsCompnt } from './FaqsCompnt'
 
 const raleway = Raleway({
     subsets: ['latin'],
@@ -45,7 +45,7 @@ export const FaqsContainer = () => {
         </Typography>
       </Box>
       <Box>
-        <Faqs />
+        <FaqsCompnt />
       </Box>
     </Stack>
   </Stack>

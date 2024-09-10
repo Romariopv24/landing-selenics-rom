@@ -1,7 +1,7 @@
 'use client'
 import { Box, Stack, styled, Typography } from '@mui/material'
 import React, { useState, useEffect } from 'react'
-import { Sidebar } from '../sidebar/page'
+import { Sidebar } from '../sidebar/Sidebar'
 import Image from 'next/image'
 import { rootImages } from '@/app/core/rootImages'
 import { Raleway } from 'next/font/google'

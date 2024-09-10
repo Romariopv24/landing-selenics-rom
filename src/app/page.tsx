@@ -1,12 +1,12 @@
-import { FaqsComponent } from './components/Faqs/page'
-import { FitComponent } from './components/gridOne/page'
+import FaqsComponent from './components/Faqs/FaqsComponent'
+import { FitComponent } from './components/gridOne/FitComponent'
 import { Banner } from './components/layoutSection/Banner'
-import { LayoutSection } from './components/layoutSection/page'
-import { MakeItHappenContainer } from './components/makeitHappen/page'
-import { Navbar } from './components/navigation/navbar/page'
-import { PricingComponent } from './components/pricing/page'
-import { ResultsComponent } from './components/Results/page'
-import { TeamComponent } from './components/team/page'
+import { LayoutSection } from './components/layoutSection/LayoutSection'
+import { MakeItHappenContainer } from './components/makeitHappen/MakeItHappenContainer'
+import { Navbar } from './components/navigation/navbar/Navbar'
+import { PricingComponent } from './components/pricing/PricingComponent'
+import { ResultsComponent } from './components/Results/ResultsComponent'
+import { TeamComponent } from './components/team/TeamComponent'
 
 export default function Home() {
   return (

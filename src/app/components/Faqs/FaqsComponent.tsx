@@ -8,7 +8,7 @@ const raleway = Raleway({
     weight:["100",'200','300', '400', '500', '600', "700", "800","900"]
   })
 
-export const FaqsComponent = () => {
+const FaqsComponent = () => {
   return (
     <Stack sx={mainContainer}>
         <FaqsContainer />
@@ -52,3 +52,5 @@ const mainContainer = {
       },
     padding: '2rem',
   }
+
+export default FaqsComponent

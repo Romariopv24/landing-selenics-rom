@@ -1,3 +1,4 @@
+'use client'
 import { ArrowDownward, ArrowDropDown, BuildOutlined, HeadsetMicOutlined, InfoOutlined, StarBorder } from '@mui/icons-material'
 import { Accordion, AccordionSummary, Typography, AccordionDetails, Stack, Box } from '@mui/material'
 import { Raleway } from 'next/font/google'
@@ -9,7 +10,7 @@ const raleway = Raleway({
     weight:["100",'200','300', '400', '500', '600', "700", "800","900"]
   })
 
-export const Faqs = () => {
+export const FaqsCompnt = () => {
   return (
     <>
   <Accordion sx={{ backgroundColor: '#1f1d2b', color: 'white' }}>
