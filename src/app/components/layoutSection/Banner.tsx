@@ -147,7 +147,7 @@ export const Banner = () => {
               sm: '35vw',
               md: '35vw',
               lg: '25vw',
-              xl: '30%', // Tamaño para pantallas extra grandes
+              xl: '100%', 
             },
             height: 'auto',
           }}

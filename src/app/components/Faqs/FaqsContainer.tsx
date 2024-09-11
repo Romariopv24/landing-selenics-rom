@@ -41,7 +41,7 @@ export const FaqsContainer = () => {
             // fontSize: { lg: '2rem' },
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis mollis ante interdum placerat. Maecenas et tortor nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+         The FAQ section covers all you need to know, from our limited client slots and package details to timelines, requirements, pricing, ad budgets, and contract lengths. We’ve compiled these questions to simplify your decision-making, ensuring you have all the key info at your fingertips!
         </Typography>
       </Box>
       <Box>
