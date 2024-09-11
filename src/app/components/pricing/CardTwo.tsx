@@ -1,6 +1,7 @@
 'use client'
 import { rootImages } from '@/app/core/rootImages'
 import { BtnPrimary } from '@/app/custom/Components'
+import { ErrorOutline } from '@mui/icons-material'
 import { Box, Stack, Typography, useTheme } from '@mui/material'
 import { DM_Sans, Raleway } from 'next/font/google'
 import React from 'react'
@@ -145,7 +146,11 @@ export const CardTwo = () => {
       </Typography>
 
       <Stack my={2} flexDirection={'row'} width={{ xs: '85%', md: '70%', lg: '85%' }} alignItems={'center'} alignContent={'center'} gap={1}>
-        <img src={rootImages.info} style={{ width: '15px', height: '15px' }} />
+      <ErrorOutline 
+         sx={{
+          width:'18px', height: '18px',
+          color:'white'
+        }} />
         <Typography
                 color='white'
 

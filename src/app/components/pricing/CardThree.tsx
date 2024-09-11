@@ -1,6 +1,7 @@
 'use client'
 import { rootImages } from '@/app/core/rootImages'
 import { BtnPrimary } from '@/app/custom/Components'
+import { ErrorOutline } from '@mui/icons-material'
 import { Box, Stack, Typography } from '@mui/material'
 import { Raleway, DM_Sans } from 'next/font/google'
 import React from 'react'
@@ -50,7 +51,11 @@ sx={{
 
      {/*  */}
      <Stack my={2} flexDirection={'row'} width={'85%'}  alignItems={'center'} alignContent={'center'} gap={1}>
-        <img src={rootImages.info} style={{width:'15px', height: '15px'}}/>
+        <ErrorOutline 
+         sx={{
+          width:'18px', height: '18px',
+          color:'white'
+        }} />
         <Typography
                 color='white'
 
