@@ -14,13 +14,13 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
         minHeight: { xs: '90vh', lg: '110vh', xl: '100%' },
         position: 'relative',
         overflow: 'hidden',
-        zIndex: 1,
       }}
     >
       <Box
         sx={{
           width: '100%',
           padding: '0 20px',
+          zIndex: -1,
         }}
       >
         <Stack
@@ -28,7 +28,6 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
             position: 'absolute',
             top: 0,
             left: 0,
-            zIndex: -1,
             width: {
               xs: '430vw',
               sm: '230vw',
@@ -53,7 +52,6 @@ export const LayoutSection = ({ children }: { children: React.ReactNode }) => {
           </video>
         </Stack>
       </Box>
-
       {children}
     </Stack>
   )

@@ -15,6 +15,8 @@ export const VideoBanner = () => {
     }
   }
 
+  console.log(rootImages.video.bannerVideo)
+
   return (
     <div
       style={{
@@ -35,9 +37,12 @@ export const VideoBanner = () => {
           ref={videoRef}
           style={{
             display: 'block',
-            width: '100%', // Ajusta el ancho al 100% del contenedor
-            height: 'auto', // Mantiene la proporción del video
+            width: '100%', 
+            height: 'auto', 
           }}
+          loop
+          autoPlay
+          muted
         >
           <source src={rootImages.video.bannerVideo} type="video/mp4" />
           Your browser does not support the video tag.
@@ -45,6 +50,7 @@ export const VideoBanner = () => {
         <Button
           onClick={handlePlayPause}
           style={{
+            zIndex: 1,
             position: 'absolute',
             top: '50%',
             left: '50%',

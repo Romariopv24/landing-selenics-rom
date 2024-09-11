@@ -10,6 +10,7 @@ export const rootImages = {
   video: {
     starsBg: `${dirVideo}Stars.mp4`,
     bannerVideo: `${dirVideo}Banner-video.mp4`,
+    gif: `${dirVideo}gif.gif`
   },
   excelOne: `${dir}excelOne.png`,
   excelTwo: `${dir}excelTwo.png`,
