@@ -35,5 +35,4 @@ const mainContainer = {
     },
   padding: '2rem',
   position: 'relative',
-  zIndex: -1, // Asegúrate de que el z-index sea menor que el del navbar
 }

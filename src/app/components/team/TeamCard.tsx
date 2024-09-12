@@ -1,4 +1,5 @@
 'use client'
+import { Brightness1 } from '@mui/icons-material'
 import { Avatar, Box, Stack, Typography } from '@mui/material'
 import { DM_Sans, Raleway } from 'next/font/google'
 import React from 'react'
@@ -77,9 +78,15 @@ export const TeamCard : React.FC<TeamCardProps> = ({
         >
             {profesion}
         </Typography>
-        <Box display={'flex'} flexDirection={'column'}  width={'83%'} gap={{xs:2, lg:1}} mt={2}>
-        <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
-        <Box display='flex' bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'} alignSelf="center"/>
+        <Box display={'flex'} flexDirection={'column'}  width={'85%'} gap={{xs:2, lg:1}} mt={2}>
+        <Stack flexDirection={'row'}  alignItems={'flex-start'} gap={1}>
+        {/* <Box display='flex' bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'} alignSelf="center"/> */}
+        <Brightness1 
+        sx={{
+          color:'white', width:'6px', height:'6px',
+          mt: 1
+        }}
+        />
         <Typography
         color='white'
         className={dmSans.className}
@@ -88,8 +95,14 @@ export const TeamCard : React.FC<TeamCardProps> = ({
             {textone}
         </Typography>
         </Stack>
-        <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
-        <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/>
+        <Stack flexDirection={'row'}  alignItems={'flex-start'}  gap={1}>
+        {/* <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/> */}
+        <Brightness1 
+         sx={{
+          color:'white', width:'6px', height:'6px',
+          mt: 1
+        }}
+        />
         <Typography
         color='white'
         className={dmSans.className}
@@ -98,8 +111,14 @@ export const TeamCard : React.FC<TeamCardProps> = ({
            {texttwo}
         </Typography>
         </Stack>
-        <Stack flexDirection={'row'}  alignItems={'center'} alignContent={'center'} gap={1}>
-        <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/>
+        <Stack flexDirection={'row'}  alignItems={'flex-start'}  gap={1}>
+        {/* <Box bgcolor={'white'}  width={'5px'} height={'5px'} borderRadius={'50rem'}/> */}
+        <Brightness1 
+        sx={{
+          color:'white', width:'6px', height:'6px',
+          mt: 1
+        }}
+        />
         <Typography
         color='white'
         className={dmSans.className}

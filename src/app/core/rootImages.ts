@@ -16,7 +16,7 @@ export const rootImages = {
   excelTwo: `${dir}excelTwo.png`,
   discord:`${dir}discord.png`,
   icons: {
-    check: `${dirIcons}Check.svg`,
+    check: `${dirIcons}check.svg`,
     headphones: `${dirIcons}headphones.svg`,
     heart: `${dirIcons}heart.svg`,
     sad: `${dirIcons}sad.svg`,

@@ -121,6 +121,7 @@ export const TeamContainer = () => {
             slidesPerView: 3,
           },
         }}
+        
       >
         {dataTeam.map((team, index) => (
           <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -136,7 +137,7 @@ export const TeamContainer = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-         <div className="swiper-pagination" style={{ display:'none' }}></div>
+        {/* <div className="swiper-pagination" style={{ display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center' }}></div> */}
     </Box>
     </>
   )
