@@ -3,6 +3,8 @@ import { DM_Sans, Raleway } from "next/font/google";
 import "./globals.css";
 import { responsiveTheme } from "@/theme/theme";
 import { ThemeProvider } from "@mui/material";
+import Head from "next/head";
+import { rootImages } from "./core/rootImages";
 
 
 const raleway = Raleway({
