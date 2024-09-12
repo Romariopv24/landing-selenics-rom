@@ -14,7 +14,8 @@ export const GradientText = () => {
   
   return (
     <>
-    <Box display={{xs: 'none', lg:'flex'}} sx={{ width: { xs: '90%', lg: '40%', xl: '55%' } }}>
+    <Box display={{xs: 'none', lg:'flex'}} sx={{ width: { xs: '90%', lg: '40%', xl: '55%' } 
+  }}>
     <Typography
       color={'white'}
       variant="h1"
@@ -31,6 +32,7 @@ export const GradientText = () => {
           xl: '5rem',
         },
         textTransform: 'uppercase',
+         textShadow: '0 25px 25px rgba(0, 0, 0, 0.5)'
       }}
     >
       <Box
@@ -137,6 +139,7 @@ export const GradientText = () => {
           xl: '4rem',
         },
         textTransform: 'uppercase',
+        textShadow: '0 25px 25px rgba(0, 0, 0, 0.5)'
       }}
     >
   <Box

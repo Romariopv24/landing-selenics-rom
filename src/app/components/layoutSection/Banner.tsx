@@ -55,6 +55,7 @@ export const Banner = () => {
           lg: '2rem',
           xl: '2.5rem',
         },
+        textShadow: '0 25px 25px rgba(0, 0, 0, 0.5)'
       }}
     >
       {'We Help Coaches and Experts Like You Convert '}
@@ -156,20 +157,7 @@ export const Banner = () => {
       </Box>
     </Typography>
       </Box>
-      {/* <Box
-      component="img"
-      src={rootImages.payingLine}
-      sx={{
-        width: {xs:'15%', xl:'7%'},
-        height: 'auto',
-        position: 'absolute',
-        bottom: {
-          xs: '58%',
-          xl: '63%',
-        },
-        left: {xs:'58%', lg:'70%', xl:'69%'},
-      }}
-    /> */}
+     
         <Link href="#book-now-section">
       <BtnPrimary
         width={'120px'}
