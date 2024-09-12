@@ -2,6 +2,7 @@
 import { Box, Typography } from '@mui/material'
 import { Raleway } from 'next/font/google'
 import Typewriter from 'typewriter-effect'
+import { TypewriterEffect } from '../TypeWritterEffect'
 
 const raleway = Raleway({
     subsets: ['latin'],
@@ -107,13 +108,13 @@ export const GradientText = () => {
           display: 'inline-block',
         }}
       >
-          <Typewriter
-          options={{
-            strings: ['Workshop?'],
-            autoStart: true,
-            loop: true,
-          }}
-        />
+      <TypewriterEffect
+        strings={['Workshop?']}
+        autoStart={true}
+        loop={true}
+        typingSpeed={150}
+        pauseDuration={2500}
+      />
       </Box>
     </Typography>
   </Box>

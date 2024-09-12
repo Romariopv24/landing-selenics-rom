@@ -9,6 +9,7 @@ import { GradientText } from './GradientText'
 import { rootImages } from '@/app/core/rootImages'
 import Typewriter from 'typewriter-effect'
 import Link from 'next/link'
+import { TypewriterEffect } from '../TypeWritterEffect'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -98,13 +99,13 @@ export const Banner = () => {
             fontWeight: 'bolder',
           }}
         >
-          <Typewriter
-            options={{
-              strings: ['Leads'],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+        <TypewriterEffect
+        strings={['Leads']}
+        autoStart={true}
+        loop={true}
+        typingSpeed={150}
+        pauseDuration={2500}
+      />
         </span>
       </Box>
       {' into '}
