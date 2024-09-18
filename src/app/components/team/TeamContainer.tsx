@@ -68,7 +68,7 @@ export const TeamContainer = () => {
       {
         background: '#4d3253',
         image: rootImages.team.reinaldo,
-        name:'Ortega',
+        name:'Parra',
         profesion:'Front-End Developer',
         textone: '+3 years of experience Develop Apps.',
         texttwo:'30% boost in customer engagement achieved through developed CX strategies.',
