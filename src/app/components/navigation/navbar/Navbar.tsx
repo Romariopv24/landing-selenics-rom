@@ -106,6 +106,7 @@ const MenuContainer = styled(Stack)(() => ({
 }))
 
 const styledBox = {
+  width:'65%',
   display: {
     xs: 'none',
     lg: 'flex',
