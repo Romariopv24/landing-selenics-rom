@@ -172,7 +172,7 @@ export const Banner = () => {
 
       <VideoBanner />
 
-      <Stack flexDirection={'row'} gap={2} mt={{ xs: 0, lg: 4 }} mb={2}>
+      <Stack flexDirection={'row'} gap={2} mt={{ xs: 1.5, lg: 4 }} mb={2}>
         <South  
         sx={{
           color:'white'

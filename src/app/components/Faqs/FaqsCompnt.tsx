@@ -18,7 +18,7 @@ export const FaqsCompnt = () => {
 
   return (
     <>
-  <Accordion sx={{ backgroundColor: '#1f1d2b', color: 'white', maxWidth: {lg:'700px'} }}>
+  <Accordion sx={{ backgroundColor: '#1f1d2b', color: 'white' }}>
       <AccordionSummary
         expandIcon={<ArrowDownward sx={{ color: 'white'}} />}
         aria-controls="panel1-content"

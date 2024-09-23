@@ -17,6 +17,7 @@ const FaqsComponent = () => {
       color='white'
         className={raleway.className}
         sx={{
+          paddingTop:'1rem',
           textAlign: 'center',
         }}
       >
