@@ -44,6 +44,7 @@ export const Convinced = () => {
             </Typography>
         </BtnPrimary>
                 </Link>
+                <Link href="#steps">
         <BtnPrimary 
            onClick={() => setShowComponent(false)}
         width={'7rem'} height='35px' transparent={true}>
@@ -55,6 +56,7 @@ export const Convinced = () => {
                 No
             </Typography>
         </BtnPrimary>
+        </Link>
     </Box>
 </Stack>
     )}
