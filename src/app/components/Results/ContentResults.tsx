@@ -1,6 +1,7 @@
 import { rootImages } from '@/app/core/rootImages'
 import { Box, Stack, Typography } from '@mui/material'
 import { Raleway } from 'next/font/google'
+import Image from 'next/image'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -29,22 +30,31 @@ export const ContentResults = () => {
         flexDirection={{ xs: 'column', md: 'row' }}
         gap={{ xs: 6, lg: 10 }}
       >
-        <Box width={{ xs: '100%', lg: '35rem' }}>
+        <Box
+         width={{ xs: '100%', 
+         lg: '32rem' 
+        }}
+         >
           <Box
             sx={{
               boxShadow: '10px 10px 2px #8250ed',
               borderRadius: '10px',
             }}
           >
-            <img
+            <Image 
               src={rootImages.excelOne}
               alt="excelone"
+              width={800}
+              height={500}
               style={{ width: '100%', height: '100%' }}
             />
-            <img
+            <Image 
               src={rootImages.excelTwo}
               alt="exceltwo"
+               width={800}
+              height={500}
               style={{ width: '100%', height: '100%' }}
+
             />
           </Box>
           <Typography
@@ -70,16 +80,18 @@ export const ContentResults = () => {
             transformed leads into revenue, boosting your bottom line.
           </Typography>
         </Box>
-        <Box width={{ xs: '100%', lg: '35rem' }}>
+        <Box width={{ xs: '100%', lg: '32rem' }}>
           <Box
             sx={{
               boxShadow: '10px 10px 2px #8250ed',
               borderRadius: '10px',
             }}
           >
-            <img
+            <Image
               src={rootImages.discord}
               alt="discord"
+              width={800}
+              height={500}
               style={{ width: '100%', height: '100%' }}
             />
           
@@ -111,29 +123,3 @@ export const ContentResults = () => {
     </Stack>
   )
 }
-
-// 8250ed
-
-// position: 'relative',
-// '&::before': {
-//   content: '""',
-//   position: 'absolute',
-//   bottom: '-10px', // Mueve el borde inferior hacia abajo
-//   right: '-6px',
-//   width: '100%', // Ajusta el ancho del borde inferior
-//   height: '10px', // Grosor del borde inferior
-//   backgroundColor: '#8250ed',
-//   borderRadius: '5px', // Redondea el borde inferior
-//   zIndex: -1,
-// },
-// '&::after': {
-//   content: '""',
-//   position: 'absolute',
-//   bottom: '-10px',
-//   right: '-9px', // Mueve el borde derecho hacia la derecha
-//   width: '10px', // Grosor del borde derecho
-//   height: '100%', // Ajusta la altura del borde derecho
-//   backgroundColor: '#8250ed',
-//   borderRadius: '5px', // Redondea el borde derecho
-//   zIndex: -1,
-// },

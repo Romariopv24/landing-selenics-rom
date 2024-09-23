@@ -14,10 +14,8 @@ const raleway = Raleway({
   
 export const PricingContent = () => {
 
-   
-
   return (
-    <Stack  mt={{ xl: 10 }} alignContent={'center'} width={{lg: '70%', xl:'60%'}}>
+    <Stack  mt={{ xs: 3, xl: 10 }} alignContent={'center'} width={{lg: '70%', xl:'60%'}}>
     <Typography
         color='white'
         className={raleway.className}
@@ -33,7 +31,7 @@ export const PricingContent = () => {
       <Stack
         mt={{ xs: 5, md: 15 ,lg: 15, xl:15}}
         flexDirection={{ xs: 'column', md: 'row' }}
-        gap={{ xs: 6, lg: 10 }}
+        gap={{ xs: 4, lg: 10 }}
       >
         <Cards />
         <Box mt={{ md: -6, lg: -6.5 }}>

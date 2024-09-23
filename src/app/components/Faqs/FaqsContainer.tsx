@@ -30,7 +30,7 @@ export const FaqsContainer = () => {
       frequently asked questions
     </Typography>
 
-    <Stack flexDirection={{ xs: 'column', lg: 'row' }} mt={{ xs: 3, lg: 20 }} gap={5}>
+    <Stack flexDirection={'column'} mt={{ xs: 3, lg: 20 }} gap={5}>
       <Box>
         <Typography
         color='white'

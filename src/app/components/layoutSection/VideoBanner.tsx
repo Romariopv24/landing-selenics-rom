@@ -43,6 +43,8 @@ export const VideoBanner = () => {
           loop
           autoPlay
           muted
+          playsInline
+          controls={false} 
         >
           <source src={rootImages.video.bannerVideo} type="video/mp4" />
           Your browser does not support the video tag.

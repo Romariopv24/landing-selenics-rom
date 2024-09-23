@@ -50,7 +50,8 @@ export const Sidebar = ({open, toggleDrawer}: Props) => {
                                     <ListItemButton>
                                         <ListItemText sx={{
                                           color:'white',
-                                          textAlign:'center'
+                                          textAlign:'left',
+                                          paddingLeft:'25px'
                                         }}  primary={lorem.text} />
                                     </ListItemButton>
                                 </ListItem>

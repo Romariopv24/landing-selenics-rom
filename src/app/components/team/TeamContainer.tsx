@@ -78,10 +78,10 @@ export const TeamContainer = () => {
     ]
 
   return (
-    <>
-    <Stack  mt={{ xl: 10 }} alignContent={'center'} width={{lg: '70%', xl:'60%'}}>
+    <Stack width={{xs:'100%',lg: '70%', xl:'60%'}} display={'flex'} justifyContent={{xs:'center', lg:'start'}} alignItems={{xs:'center', lg:'start'}}>
+    <Stack display={'flex'}  mt={{xs: 5, xl: 10 }} alignContent={'start'} width={{xs:'50%', md:'90%', lg:'100%'}} >
     <Typography
-    color='white'
+        color='white'
         className={raleway.className}
         sx={{
           fontWeight: 900,
@@ -95,7 +95,7 @@ export const TeamContainer = () => {
     </Stack>
 
     {/* Swipper  */}
-    <Box display={'flex'} mt={{lg:10}} width={{xs:'100%', sm:'50%',md:"100%", lg:'70%'}} alignItems={'center'} justifyContent={'center'} alignContent={'center'}>
+    <Box display={'flex'} mt={{xs: 5, lg:10}} width={{xs:'70%', sm:'50%',md:"90%", lg:'100%'}} alignItems={'center'} justifyContent={'center'} alignContent={'center'}>
       <Swiper
        autoplay={{ delay: 3000, disableOnInteraction: false }}
         style={{ height: "600px" }}
@@ -139,6 +139,6 @@ export const TeamContainer = () => {
       </Swiper>
         {/* <div className="swiper-pagination" style={{ display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center' }}></div> */}
     </Box>
-    </>
+    </Stack>
   )
 }

@@ -34,6 +34,6 @@ export const FitComponent = () => {
             radial-gradient(circle at 20% 90%, #34266e, transparent 50%)
         `,
         },
-      padding: '2rem',
+    //   padding: '2rem',
  }
     
