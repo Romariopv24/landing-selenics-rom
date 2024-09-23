@@ -33,6 +33,6 @@ const mainContainer = {
         radial-gradient(circle at 20% 90%, #5f1869, transparent 50%)
     `,
     },
-  // padding: '5rem',
+  padding: '2rem',
   position: 'relative',
 }

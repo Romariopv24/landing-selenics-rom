@@ -33,7 +33,7 @@ const mainContainer = {
         radial-gradient(circle at 20% 90%, #11649b, transparent 50%)
     `,
     },
-  // padding: '2rem',
+  padding: '2rem',
 }
 
 // 11649b

@@ -26,7 +26,7 @@ export const ContentResults = () => {
       </Typography>
 
       <Stack
-        mt={{ xs: 5, lg: 8, xl:10}}
+        mt={{ xs: 5, lg: 8, xl:15}}
         flexDirection={{ xs: 'column', md: 'row' }}
         gap={{ xs: 6, lg: 10 }}
       >
@@ -46,14 +46,14 @@ export const ContentResults = () => {
               alt="excelone"
               width={800}
               height={500}
-              style={{ width: '100%', height: '100%' }}
+              // style={{ width: '100%', height: '100%' }}
             />
             <Image 
               src={rootImages.excelTwo}
               alt="exceltwo"
                width={800}
               height={500}
-              style={{ width: '100%', height: '100%' }}
+              // style={{ width: '100%', height: '100%' }}
 
             />
           </Box>

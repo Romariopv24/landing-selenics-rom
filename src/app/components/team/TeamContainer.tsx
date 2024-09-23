@@ -79,7 +79,7 @@ export const TeamContainer = () => {
 
   return (
     <Stack width={{xs:'100%',lg: '70%', xl:'60%'}} display={'flex'} justifyContent={{xs:'center', lg:'start'}} alignItems={{xs:'center', lg:'start'}}>
-    <Stack display={'flex'}  mt={{xs: 5, xl: 10 }} alignContent={'start'} width={{xs:'50%', md:'90%', lg:'100%'}} >
+    <Stack display={'flex'}  mt={{xs: 5, xl: 10 }} alignContent={'start'} width={{xs:'100%', md:'90%', lg:'100%'}} >
     <Typography
         color='white'
         className={raleway.className}
@@ -95,7 +95,7 @@ export const TeamContainer = () => {
     </Stack>
 
     {/* Swipper  */}
-    <Box display={'flex'} mt={{xs: 5, lg:10}} width={{xs:'70%', sm:'50%',md:"90%", lg:'100%'}} alignItems={'center'} justifyContent={'center'} alignContent={'center'}>
+    <Box display={'flex'} mt={{xs: 5, lg:10}} width={{xs:'100%',md:"90%", lg:'100%'}} alignItems={'center'} justifyContent={'center'} alignContent={'center'}>
       <Swiper
        autoplay={{ delay: 3000, disableOnInteraction: false }}
         style={{ height: "600px" }}
