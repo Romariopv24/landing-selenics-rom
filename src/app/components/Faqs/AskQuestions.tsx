@@ -1,4 +1,3 @@
-'use client'
 import { styled } from '@mui/material/styles'
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
 import MuiAccordionSummary, {
@@ -13,22 +12,20 @@ import { ArrowForwardIosSharp } from '@mui/icons-material';
 interface Props {
   question: string;
   ask: string;
+  panel: string;
+  panelContent: string;
+  panelHeader: string;
+  expanded: string | false;
+  onChange: (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => void;
 }
 
-export const AskQuestions = ({question, ask}: Props) => {
-    const [expanded, setExpanded] = useState<string | false>('')
-
-    const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
-      console.log(newExpanded)
-      setExpanded(newExpanded ? panel : false)
-    }
+export const AskQuestions = ({ question, ask, panel, panelContent, panelHeader, expanded, onChange }: Props) => {
 
   return (
     <div>
-    <Accordion expanded={expanded === question} onChange={handleChange(question)}>
-      <AccordionSummary aria-controls={question} id={question}>
-        <Typography  color={'white'}>{question}</Typography>
+    <Accordion expanded={expanded === panel} onChange={onChange(panel)}>
+      <AccordionSummary aria-controls={panelContent} id={panelHeader}>
+        <Typography color={'white'}>{question}</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography color={'white'}> 

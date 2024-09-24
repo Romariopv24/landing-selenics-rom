@@ -1,9 +1,10 @@
+'use client'
 import { ArrowDownward, ArrowDropDown, BuildOutlined, HeadsetMicOutlined, InfoOutlined, StarBorder } from '@mui/icons-material'
 import { Accordion, AccordionSummary, Typography, AccordionDetails, Stack, Box } from '@mui/material'
 import { Raleway } from 'next/font/google'
-import React from 'react'
-import { AskQuestions } from './AskQuestions'
+import React, { useState } from 'react'
 import { dataAskQuestions } from './data'
+import { AskQuestions } from './AskQuestions'
 
 const raleway = Raleway({
     subsets: ['latin'],
@@ -12,13 +13,25 @@ const raleway = Raleway({
   })
 
 export const FaqsCompnt = () => {
- 
+ const [expandedParents, setExpadedParents] = useState<string | false>('panel1')
+  const [expanded, setExpanded] = useState<string | false>('panel1')
+
+  const handleParentChange =  (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+    setExpadedParents(newExpanded ? panel : false)
+  }
+
+  const handleChange = (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+    setExpanded(newExpanded ? panel : false)
+  }
+
   const dataFaqs = dataAskQuestions
 
 
   return (
     <>
-  <Accordion sx={{ backgroundColor: '#1f1d2b', color: 'white' }}>
+  <Accordion expanded={expandedParents === 'panel1'} sx={{ backgroundColor: '#1f1d2b', color: 'white' }}
+  onChange={handleParentChange('panel1')}
+  >
       <AccordionSummary
         expandIcon={<ArrowDownward sx={{ color: 'white'}} />}
         aria-controls="panel1-content"
@@ -46,22 +59,24 @@ export const FaqsCompnt = () => {
       }}
     >
       {dataFaqs['Getting Started'].map((item, index) => {
-        const {question, ask} = item
+        const {question, ask, panel, panelContent,panelHeader } = item
         return(
-        <AskQuestions key={index} question={question} ask={ask} />
+        <div key={index}>
+        <AskQuestions question={question} ask={ask} panel={panel} panelContent={panelContent} panelHeader={panelHeader}
+        expanded={expanded}
+        onChange={handleChange}
+        />
+        </div>
       )})}
       
     </Box>
-      {/* <AccordionDetails>
-        <Typography
-          className={raleway.className}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </Typography>
-      </AccordionDetails> */}
+      
     </Accordion>
-    <Accordion sx={{ backgroundColor: '#1f1d2b', color: 'white' }}>
+    <Accordion
+    expanded={expandedParents === 'panel2'}
+    sx={{ backgroundColor: '#1f1d2b', color: 'white' }}
+    onChange={handleParentChange('panel2')}
+    >
       <AccordionSummary
         expandIcon={<ArrowDownward sx={{ color: 'white' }} />}
         aria-controls="panel2-content"
@@ -87,13 +102,21 @@ export const FaqsCompnt = () => {
       }}
     >
       {dataFaqs['Service Details'].map((item, index) => {
-        const {question, ask} = item
+        const {question, ask, panel, panelContent,panelHeader } = item
         return(
-        <AskQuestions key={index} question={question} ask={ask} />
+          <div key={index}>
+  <AskQuestions question={question} ask={ask} panel={panel} panelContent={panelContent} panelHeader={panelHeader}
+        expanded={expanded}
+        onChange={handleChange}
+  />
+          </div>
       )})}
     </Box>
     </Accordion>
-    <Accordion sx={{ backgroundColor: '#1f1d2b', color: 'white' }}>
+    <Accordion 
+    expanded={expandedParents === 'panel3'}
+    onChange={handleParentChange('panel3')}
+    sx={{ backgroundColor: '#1f1d2b', color: 'white' }}>
       <AccordionSummary
         expandIcon={<ArrowDownward sx={{ color: 'white' }} />}
         aria-controls="panel2-content"
@@ -119,13 +142,21 @@ export const FaqsCompnt = () => {
       }}
     >
       {dataFaqs['Project Execution'].map((item, index) => {
-        const {question, ask} = item
+          const {question, ask, panel, panelContent,panelHeader } = item
         return(
-        <AskQuestions key={index} question={question} ask={ask} />
+          <div key={index}>
+        <AskQuestions question={question} ask={ask} panel={panel} panelContent={panelContent} panelHeader={panelHeader}
+              expanded={expanded}
+              onChange={handleChange}
+        />
+          </div>
       )})}
     </Box>
     </Accordion>
-    <Accordion sx={{ backgroundColor: '#1f1d2b', color: 'white' }}>
+    <Accordion 
+    expanded={expandedParents === 'panel4'}
+    onChange={handleParentChange('panel4')}
+    sx={{ backgroundColor: '#1f1d2b', color: 'white' }}>
       <AccordionSummary
         expandIcon={<ArrowDownward sx={{ color: 'white' }} />}
         aria-controls="panel2-content"
@@ -151,9 +182,14 @@ export const FaqsCompnt = () => {
       }}
     >
       {dataFaqs['Support and Communication'].map((item, index) => {
-        const {question, ask} = item
+        const {question, ask, panel, panelContent,panelHeader } = item
         return(
-        <AskQuestions key={index} question={question} ask={ask} />
+          <div key={index}>
+        <AskQuestions question={question} ask={ask} panel={panel} panelContent={panelContent} panelHeader={panelHeader}
+        expanded={expanded}
+        onChange={handleChange}
+  />
+          </div>
       )})}
     </Box>
     </Accordion>
