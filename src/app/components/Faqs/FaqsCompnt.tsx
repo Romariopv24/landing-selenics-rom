@@ -13,7 +13,7 @@ const raleway = Raleway({
   })
 
 export const FaqsCompnt = () => {
- const [expandedParents, setExpadedParents] = useState<string | false>('panel1')
+ const [expandedParents, setExpadedParents] = useState<string | false>('')
   const [expanded, setExpanded] = useState<string | false>('panel1')
 
   const handleParentChange =  (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {

@@ -15,10 +15,10 @@ const mainContainer = {
   alignItems: 'center',
   flexDirection: 'column',
   minHeight: { lg: '95vh', xs: '100vh' },
-  background: `
-        radial-gradient(circle at 10% 40%, #5f1869, transparent 60%),
-        radial-gradient(circle at 95% 120%, #11649b, transparent 50%)
-             `,
+  // background: `
+  //       radial-gradient(circle at 10% 40%, #5f1869, transparent 60%),
+  //       radial-gradient(circle at 95% 120%, #11649b, transparent 50%)
+  //            `,
   padding: '2rem',
 }
 

@@ -7,6 +7,8 @@ import { Navbar } from './components/navigation/navbar/Navbar'
 import { PricingComponent } from './components/pricing/PricingComponent'
 import { ResultsComponent } from './components/Results/ResultsComponent'
 import { TeamComponent } from './components/team/TeamComponent'
+import styles from './page.module.css'
+
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
         <Navbar />
         <Banner />
       </LayoutSection>
+      <div className={styles.container}>
       <section id="references">
       <ResultsComponent />
       </section>
@@ -33,6 +36,7 @@ export default function Home() {
       <section id="faqs">
       <FaqsComponent />
       </section>
+      </div>
     </>
   )
 }
