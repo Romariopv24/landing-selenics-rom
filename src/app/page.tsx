@@ -20,7 +20,7 @@ export default function Home() {
       if (event.origin !== 'https://api.leadconnectorhq.com') return;
 
       // Maneja la respuesta del iframe
-      if (event.data.payload.payload === false) {
+      if (event.data.type === 'INIT_INSTANCE') {
         console.log('Se envió el formulario correctamente');
         alert('Se envió el formulario correctamente');
       }
@@ -32,6 +32,16 @@ export default function Home() {
       window.removeEventListener('message', handleMessage);
     };
   }, [])
+
+  // instanceId
+  // : 
+  // 8000
+  // source
+  // : 
+  // "@devtools-page"
+  // type
+  // : 
+  // "INIT_INSTANCE"
   return (
     <>
       <LayoutSection>
