@@ -1,3 +1,5 @@
+'use client'
+import { useEffect } from 'react'
 import FaqsComponent from './components/Faqs/FaqsComponent'
 import { FitComponent } from './components/gridOne/FitComponent'
 import { Banner } from './components/layoutSection/Banner'
@@ -11,6 +13,23 @@ import styles from './page.module.css'
 
 
 export default function Home() {
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      // Verifica el origen del mensaje para mayor seguridad
+      if (event.origin !== 'https://api.leadconnectorhq.com') return;
+
+      // Maneja la respuesta del iframe
+      if (event.data.type === 'formSubmission') {
+        alert('Se envió el formulario correctamente');
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
+  }, [])
   return (
     <>
       <LayoutSection>
