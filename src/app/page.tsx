@@ -15,11 +15,13 @@ import styles from './page.module.css'
 export default function Home() {
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
+      console.log(event)
       // Verifica el origen del mensaje para mayor seguridad
       if (event.origin !== 'https://api.leadconnectorhq.com') return;
 
       // Maneja la respuesta del iframe
       if (event.data.type === 'formSubmission') {
+        console.log('Se envió el formulario correctamente');
         alert('Se envió el formulario correctamente');
       }
     };
