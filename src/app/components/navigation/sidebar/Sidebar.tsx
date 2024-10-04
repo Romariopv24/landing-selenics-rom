@@ -1,12 +1,15 @@
 import { Circle, Menu } from '@mui/icons-material'
 import { Box, Drawer, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface Props {
     open: boolean
     toggleDrawer: (open: boolean) => () => void
 }
 export const Sidebar = ({open, toggleDrawer}: Props) => {
+  const currentPath = usePathname()
+  
   return (
     <>
      <Menu onClick={toggleDrawer(true)}
@@ -43,7 +46,7 @@ export const Sidebar = ({open, toggleDrawer}: Props) => {
               {text:'Faqs', href: '#faqs'},
                         ].map((lorem: {text: string , href: string}, index: number) => {
                             return (
-                              <Link href={lorem.href} 
+                              <Link href={currentPath === '/form' ? '/' : lorem.href} 
                               key={index}
                               >
                                 <ListItem disablePadding>

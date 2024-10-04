@@ -2,6 +2,7 @@
 import { BtnPrimary } from '@/app/custom/Components'
 import { Box, Stack, Typography } from '@mui/material'
 import { DM_Sans, Raleway } from 'next/font/google'
+import Link from 'next/link'
 import React from 'react'
 
 const raleway = Raleway({
@@ -105,7 +106,9 @@ export const Cards = () => {
                 className={dmSans.className}
                 fontSize={{xs:'14px', lg:'14px'}}
                 >
+                    <Link href="/form">
                      I Want It!
+                     </Link>
                </Typography>
             </BtnPrimary>
         </Stack>

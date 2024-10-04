@@ -7,6 +7,7 @@ import { rootImages } from '@/app/core/rootImages'
 import { Raleway } from 'next/font/google'
 import { BookNow } from './BookNow'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -15,6 +16,7 @@ const raleway = Raleway({
 })
 
 export const Navbar = () => {
+  const currentPath = usePathname()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [visible, setVisible] = useState(false)
@@ -44,9 +46,45 @@ export const Navbar = () => {
     }
   }, [])
 
+
+  const MainContainer = styled(Stack)<{ scrolled?: boolean }>(({ scrolled }) => ({
+    flexDirection: 'row',
+    height: '5rem',
+    backgroundColor: scrolled === true ? 'rgba(55, 23, 126, 0.8)' : '#312565',
+    alignItems: 'center',
+    position: currentPath === '/' ? 'fixed' : 'sticky',
+    top: 0,
+    width: '100%',
+    zIndex: 1000,
+    transition: 'background-color 0.3s ease',
+  }))
+  
+  const MenuContainer = styled(Stack)(() => ({
+    width: '94%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    margin: 'auto',
+  }))
+  
+  const styledBox = {
+    width:'65%',
+    display: {
+      xs: 'none',
+      lg: 'flex',
+    },
+    flexDirection: 'row',
+    gap: 10,
+    marginRight: { lg: '3rem', xl: '10rem' },
+    alignItems: 'center',
+    alignContent: 'center',
+    justifyContent: 'center',
+  }
+
+
   return (
     <Stack spacing={visible ? 6 : 0 } alignItems="center" justifyContent="center">
-      <BookNow  visible={visible} setVisible={setVisible}/>
+     <BookNow visible={visible} setVisible={setVisible} /> 
       <MainContainer scrolled={scrolled ? true : undefined}>
         <MenuContainer>
           <Image
@@ -65,7 +103,7 @@ export const Navbar = () => {
               {text:'Team', href: '#team'},
               {text:'Faqs', href: '#faqs'},
             ].map((loremp: {text:string, href: string}, index: number) => (
-              <Link href={loremp.href} 
+              <Link href={currentPath === '/form' ? '/' :loremp.href} 
               key={index}
               >
               <Typography
@@ -85,36 +123,4 @@ export const Navbar = () => {
   )
 }
 
-const MainContainer = styled(Stack)<{ scrolled?: boolean }>(({ scrolled }) => ({
-  flexDirection: 'row',
-  height: '5rem',
-  backgroundColor: scrolled === true ? 'rgba(55, 23, 126, 0.8)' : '#312565',
-  alignItems: 'center',
-  position: 'fixed',
-  top: 0,
-  width: '100%',
-  zIndex: 1000,
-  transition: 'background-color 0.3s ease',
-}))
 
-const MenuContainer = styled(Stack)(() => ({
-  width: '94%',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  margin: 'auto',
-}))
-
-const styledBox = {
-  width:'65%',
-  display: {
-    xs: 'none',
-    lg: 'flex',
-  },
-  flexDirection: 'row',
-  gap: 10,
-  marginRight: { lg: '3rem', xl: '10rem' },
-  alignItems: 'center',
-  alignContent: 'center',
-  justifyContent: 'center',
-}

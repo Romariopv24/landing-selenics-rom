@@ -4,6 +4,7 @@ import { BtnPrimary } from '@/app/custom/Components'
 import { ErrorOutline } from '@mui/icons-material'
 import { Box, Stack, Typography } from '@mui/material'
 import { Raleway, DM_Sans } from 'next/font/google'
+import Link from 'next/link'
 import React from 'react'
 
 const raleway = Raleway({
@@ -89,7 +90,9 @@ sx={{
             className={dmSans.className}
             fontSize={{xs:'14px', lg:'14px'}}
             >
+              <Link href="/form">
                  I Want It!
+                 </Link>
            </Typography>
         </BtnPrimary>
     </Stack>

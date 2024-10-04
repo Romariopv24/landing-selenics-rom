@@ -5,6 +5,7 @@ import { responsiveTheme } from "@/theme/theme";
 import { ThemeProvider } from "@mui/material";
 import Head from "next/head";
 import { rootImages } from "./core/rootImages";
+import { Navbar } from "./components/navigation/navbar/Navbar";
 
 
 const raleway = Raleway({
