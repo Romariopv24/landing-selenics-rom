@@ -20,7 +20,7 @@ export default function Home() {
       if (event.origin !== 'https://api.leadconnectorhq.com') return;
 
       // Maneja la respuesta del iframe
-      if (event.data.type === 'formSubmission') {
+      if (event.data.payload.payload.length > 0) {
         console.log('Se envió el formulario correctamente');
         alert('Se envió el formulario correctamente');
       }
